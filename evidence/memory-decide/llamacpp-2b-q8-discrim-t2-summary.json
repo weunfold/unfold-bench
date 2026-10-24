@@ -1,0 +1,62 @@
+{
+ "label": "llamacpp-2b-q8-discrim-t2",
+ "schema_variant": "discriminated",
+ "ordered_schema": true,
+ "key_order": [
+  "reason",
+  "decision",
+  "select",
+  "proposal"
+ ],
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v2.txt",
+ "instructions_sha256": "b48d59e35d5e6c00ce2c781b11de34ec49e95e9722d93f15ff4662e5127bd32c",
+ "base_url": "http://127.0.0.1:8089/v1",
+ "model": "Qwen3.5-2B-Q8_0",
+ "when_utc": "2026-10-24T15:57:16Z",
+ "scored_warm": {
+  "decisions_ok": 21,
+  "exact_selection": 10,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 20,
+  "n": 24,
+  "p95_ms": 627.9,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-x3",
+   "dev-n2",
+   "dev-n3"
+  ]
+ },
+ "cold": {
+  "decisions_ok": 21,
+  "exact_selection": 10,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 18,
+  "n": 24,
+  "p95_ms": 607.4,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-x3",
+   "dev-n2",
+   "dev-n3"
+  ]
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 144,
+  "p50": 360.4,
+  "p95": 627.9,
+  "p99": 657.8,
+  "max": 664.7,
+  "share_le_500ms": 0.799
+ },
+ "outcomes_all": {
+  "ok": 168
+ },
+ "repeat_decision_stability": 0.875
+}

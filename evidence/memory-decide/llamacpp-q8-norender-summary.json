@@ -1,0 +1,83 @@
+{
+ "label": "llamacpp-q8-norender",
+ "base_url": "http://127.0.0.1:8089/v1",
+ "model": "Qwen3.5-0.8B-Q8_0",
+ "when_utc": "2026-10-23T19:04:18Z",
+ "scored_warm": {
+  "decisions_ok": 6,
+  "exact_selection": 0,
+  "selection_cases": 11,
+  "proposal_violations": 1,
+  "non_decisions": 9,
+  "deadline_hits": 8,
+  "n": 24,
+  "p95_ms": Infinity,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r1",
+   "dev-r2",
+   "dev-r3",
+   "dev-r4",
+   "dev-r5",
+   "dev-i2",
+   "dev-c1",
+   "dev-c2",
+   "dev-c3",
+   "dev-x1",
+   "dev-x2",
+   "dev-x3",
+   "dev-n1",
+   "dev-n2",
+   "dev-n3",
+   "dev-k1",
+   "dev-k2",
+   "dev-m2"
+  ]
+ },
+ "cold": {
+  "decisions_ok": 6,
+  "exact_selection": 0,
+  "selection_cases": 11,
+  "proposal_violations": 1,
+  "non_decisions": 9,
+  "deadline_hits": 8,
+  "n": 24,
+  "p95_ms": Infinity,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r1",
+   "dev-r2",
+   "dev-r3",
+   "dev-r4",
+   "dev-r5",
+   "dev-i2",
+   "dev-c1",
+   "dev-c2",
+   "dev-c3",
+   "dev-x1",
+   "dev-x2",
+   "dev-x3",
+   "dev-n1",
+   "dev-n2",
+   "dev-n3",
+   "dev-k1",
+   "dev-k2",
+   "dev-m2"
+  ]
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 90,
+  "p50": 410.1,
+  "p95": 647.1,
+  "p99": 662.5,
+  "max": 662.5,
+  "share_le_500ms": 0.533
+ },
+ "outcomes_all": {
+  "ok": 105,
+  "schema_invalid": 63
+ },
+ "repeat_decision_stability": 0.25
+}

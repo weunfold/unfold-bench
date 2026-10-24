@@ -1,0 +1,68 @@
+{
+ "label": "llamacpp-2b-q8-ordered",
+ "ordered_schema": true,
+ "base_url": "http://127.0.0.1:8089/v1",
+ "model": "Qwen3.5-2B-Q8_0",
+ "when_utc": "2026-10-23T19:36:06Z",
+ "scored_warm": {
+  "decisions_ok": 14,
+  "exact_selection": 8,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 1,
+  "deadline_hits": 6,
+  "n": 24,
+  "p95_ms": 922.4,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-i2",
+   "dev-x1",
+   "dev-x2",
+   "dev-x3",
+   "dev-n1",
+   "dev-n2",
+   "dev-n3",
+   "dev-k1",
+   "dev-k2",
+   "dev-k3"
+  ]
+ },
+ "cold": {
+  "decisions_ok": 14,
+  "exact_selection": 8,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 1,
+  "deadline_hits": 6,
+  "n": 24,
+  "p95_ms": 1124.8,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-i2",
+   "dev-x1",
+   "dev-x2",
+   "dev-x3",
+   "dev-n1",
+   "dev-n2",
+   "dev-n3",
+   "dev-k1",
+   "dev-k2",
+   "dev-k3"
+  ]
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 138,
+  "p50": 531.2,
+  "p95": 874.9,
+  "p99": 922.4,
+  "max": 973.0,
+  "share_le_500ms": 0.254
+ },
+ "outcomes_all": {
+  "ok": 161,
+  "schema_invalid": 7
+ },
+ "repeat_decision_stability": 0.5833333333333334
+}

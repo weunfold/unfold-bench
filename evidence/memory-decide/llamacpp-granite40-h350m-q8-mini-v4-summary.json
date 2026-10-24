@@ -1,0 +1,72 @@
+{
+ "label": "llamacpp-granite40-h350m-q8-mini-v4",
+ "schema_variant": "grammar-mini",
+ "server_extra": "-fa on --ctx-size 1536",
+ "answer_from_reasoning": false,
+ "ordered_schema": true,
+ "key_order": [
+  "reason",
+  "decision",
+  "select",
+  "proposal"
+ ],
+ "instructions_file": "tasks/memory-decide/instructions/instructions-mini-v4.txt",
+ "instructions_sha256": "e01523b0098ce2acee5d657bbc78617a9c8f259d7f254b90fb63ad465dc0e3a1",
+ "base_url": "http://127.0.0.1:8089/v1",
+ "model": "granite40-h350m-q8",
+ "when_utc": "2026-10-24T17:31:29Z",
+ "scored_warm": {
+  "decisions_ok": 17,
+  "exact_selection": 8,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 24,
+  "n": 24,
+  "p95_ms": 108.9,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r2",
+   "dev-r3",
+   "dev-r5",
+   "dev-i1",
+   "dev-i2",
+   "dev-n3",
+   "dev-k2"
+  ]
+ },
+ "cold": {
+  "decisions_ok": 17,
+  "exact_selection": 8,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 24,
+  "n": 24,
+  "p95_ms": 108.0,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r2",
+   "dev-r3",
+   "dev-r5",
+   "dev-i1",
+   "dev-i2",
+   "dev-n3",
+   "dev-k2"
+  ]
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 144,
+  "p50": 82.2,
+  "p95": 110.1,
+  "p99": 115.0,
+  "max": 115.9,
+  "share_le_500ms": 1.0
+ },
+ "outcomes_all": {
+  "ok": 168
+ },
+ "repeat_decision_stability": 0.7083333333333334
+}

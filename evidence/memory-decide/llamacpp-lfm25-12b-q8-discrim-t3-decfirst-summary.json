@@ -1,0 +1,92 @@
+{
+ "label": "llamacpp-lfm25-12b-q8-discrim-t3-decfirst",
+ "schema_variant": "discriminated",
+ "ordered_schema": true,
+ "key_order": [
+  "decision",
+  "select",
+  "proposal",
+  "reason"
+ ],
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v3.txt",
+ "instructions_sha256": "64741607c1588e58f3ec0fd175ff7e28a20254cf31a3c596ff41d360f0242008",
+ "base_url": "http://127.0.0.1:8089/v1",
+ "model": "lfm25-12b-q8",
+ "when_utc": "2026-10-24T16:35:23Z",
+ "scored_warm": {
+  "decisions_ok": 6,
+  "exact_selection": 0,
+  "selection_cases": 11,
+  "proposal_violations": 6,
+  "non_decisions": 0,
+  "deadline_hits": 24,
+  "n": 24,
+  "p95_ms": 472.6,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r1",
+   "dev-r2",
+   "dev-r3",
+   "dev-r4",
+   "dev-r5",
+   "dev-i1",
+   "dev-i2",
+   "dev-i3",
+   "dev-i4",
+   "dev-c1",
+   "dev-c2",
+   "dev-c3",
+   "dev-x1",
+   "dev-x2",
+   "dev-x3",
+   "dev-k1",
+   "dev-m1",
+   "dev-m2"
+  ]
+ },
+ "cold": {
+  "decisions_ok": 6,
+  "exact_selection": 0,
+  "selection_cases": 11,
+  "proposal_violations": 6,
+  "non_decisions": 0,
+  "deadline_hits": 23,
+  "n": 24,
+  "p95_ms": 471.9,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r1",
+   "dev-r2",
+   "dev-r3",
+   "dev-r4",
+   "dev-r5",
+   "dev-i1",
+   "dev-i2",
+   "dev-i3",
+   "dev-i4",
+   "dev-c1",
+   "dev-c2",
+   "dev-c3",
+   "dev-x1",
+   "dev-x2",
+   "dev-x3",
+   "dev-k1",
+   "dev-m1",
+   "dev-m2"
+  ]
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 144,
+  "p50": 417.4,
+  "p95": 500.5,
+  "p99": 525.0,
+  "max": 559.3,
+  "share_le_500ms": 0.944
+ },
+ "outcomes_all": {
+  "ok": 168
+ },
+ "repeat_decision_stability": 0.25
+}

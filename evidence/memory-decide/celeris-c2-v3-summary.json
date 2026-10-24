@@ -1,0 +1,66 @@
+{
+ "label": "celeris-c2-v3",
+ "schema_variant": "frozen",
+ "ordered_schema": true,
+ "key_order": [
+  "reason",
+  "decision",
+  "select",
+  "proposal"
+ ],
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v3.txt",
+ "instructions_sha256": "64741607c1588e58f3ec0fd175ff7e28a20254cf31a3c596ff41d360f0242008",
+ "base_url": "https://inference.celeris.ai/celeris-1/v1",
+ "model": "celeris-1",
+ "when_utc": "2026-10-24T17:29:22Z",
+ "scored_warm": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 24,
+  "n": 24,
+  "p95_ms": 271.7,
+  "v0_decisions_ok": 10,
+  "pass": true,
+  "misses": []
+ },
+ "cold": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 24,
+  "n": 24,
+  "p95_ms": 260.7,
+  "v0_decisions_ok": 10,
+  "pass": true,
+  "misses": []
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 143,
+  "p50": 238.6,
+  "p95": 267.8,
+  "p99": 291.2,
+  "max": 295.6,
+  "share_le_500ms": 1.0
+ },
+ "outcomes_all": {
+  "error:HTTP400": 1,
+  "ok": 167
+ },
+ "server_ms_ok_warm_plus_repeats": {
+  "n": 143,
+  "p50": 69.628,
+  "p95": 100.87
+ },
+ "variant_flags": {
+  "mini": false,
+  "json_object": false,
+  "decision_api": false,
+  "magnus_nothink": false
+ },
+ "repeat_decision_stability": 0.9916666666666667
+}

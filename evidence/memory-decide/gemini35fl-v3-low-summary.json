@@ -1,0 +1,61 @@
+{
+ "label": "gemini35fl-v3-low",
+ "provider": "gemini",
+ "model": "gemini-3.5-flash-lite",
+ "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v3.txt",
+ "instructions_sha256": "64741607c1588e58f3ec0fd175ff7e28a20254cf31a3c596ff41d360f0242008",
+ "settings": {
+  "min_interval_s": 4.2,
+  "repeats": 5,
+  "effort": "low",
+  "thinking": null,
+  "max_out": 2048,
+  "frozen_bytes": false,
+  "schema": "frozen strict"
+ },
+ "when_utc": "2026-10-24T20:52:29Z",
+ "scored_warm": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 0,
+  "n": 24,
+  "p95_ms": 935.9,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": []
+ },
+ "cold": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 0,
+  "n": 24,
+  "p95_ms": 932.0,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": []
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 144,
+  "p50": 893.3,
+  "p95": 1091.1,
+  "p99": 1182.9,
+  "max": 1344.1,
+  "share_le_500ms": 0.0
+ },
+ "outcomes_all": {
+  "ok": 168
+ },
+ "server_ms_ok_warm_plus_repeats": {
+  "n": 0,
+  "p50": null,
+  "p95": null
+ },
+ "repeat_decision_stability": 1.0
+}

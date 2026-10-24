@@ -1,0 +1,84 @@
+{
+ "label": "llamacpp-memop-06b-q8-discrim-t3-decfirst",
+ "schema_variant": "discriminated",
+ "ordered_schema": true,
+ "key_order": [
+  "decision",
+  "select",
+  "proposal",
+  "reason"
+ ],
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v3.txt",
+ "instructions_sha256": "64741607c1588e58f3ec0fd175ff7e28a20254cf31a3c596ff41d360f0242008",
+ "base_url": "http://127.0.0.1:8089/v1",
+ "model": "memop-06b-q8",
+ "when_utc": "2026-10-24T16:40:52Z",
+ "scored_warm": {
+  "decisions_ok": 10,
+  "exact_selection": 4,
+  "selection_cases": 11,
+  "proposal_violations": 5,
+  "non_decisions": 0,
+  "deadline_hits": 24,
+  "n": 24,
+  "p95_ms": 395.6,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r3",
+   "dev-r4",
+   "dev-r5",
+   "dev-i1",
+   "dev-i2",
+   "dev-i4",
+   "dev-c1",
+   "dev-c2",
+   "dev-c3",
+   "dev-x3",
+   "dev-k1",
+   "dev-k2",
+   "dev-m2",
+   "dev-m3"
+  ]
+ },
+ "cold": {
+  "decisions_ok": 10,
+  "exact_selection": 4,
+  "selection_cases": 11,
+  "proposal_violations": 5,
+  "non_decisions": 0,
+  "deadline_hits": 24,
+  "n": 24,
+  "p95_ms": 346.0,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r3",
+   "dev-r4",
+   "dev-r5",
+   "dev-i1",
+   "dev-i2",
+   "dev-i4",
+   "dev-c1",
+   "dev-c2",
+   "dev-c3",
+   "dev-x3",
+   "dev-k1",
+   "dev-k2",
+   "dev-m2",
+   "dev-m3"
+  ]
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 144,
+  "p50": 273.4,
+  "p95": 379.6,
+  "p99": 408.4,
+  "max": 504.3,
+  "share_le_500ms": 0.993
+ },
+ "outcomes_all": {
+  "ok": 168
+ },
+ "repeat_decision_stability": 0.4166666666666667
+}

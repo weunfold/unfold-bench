@@ -1,0 +1,61 @@
+{
+ "label": "luna-v3-none",
+ "provider": "openai",
+ "model": "gpt-6-luna",
+ "base_url": "https://api.openai.com/v1/responses",
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v3.txt",
+ "instructions_sha256": "64741607c1588e58f3ec0fd175ff7e28a20254cf31a3c596ff41d360f0242008",
+ "settings": {
+  "min_interval_s": 0.0,
+  "repeats": 5,
+  "effort": "none",
+  "thinking": null,
+  "max_out": null,
+  "frozen_bytes": false,
+  "schema": "frozen strict"
+ },
+ "when_utc": "2026-10-24T18:57:14Z",
+ "scored_warm": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 0,
+  "n": 24,
+  "p95_ms": 1610.8,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": []
+ },
+ "cold": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 0,
+  "n": 24,
+  "p95_ms": 1503.1,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": []
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 144,
+  "p50": 1131.1,
+  "p95": 1550.4,
+  "p99": 1841.9,
+  "max": 1957.5,
+  "share_le_500ms": 0.0
+ },
+ "outcomes_all": {
+  "ok": 168
+ },
+ "server_ms_ok_warm_plus_repeats": {
+  "n": 144,
+  "p50": 938.0,
+  "p95": 1282.0
+ },
+ "repeat_decision_stability": 1.0
+}

@@ -1,0 +1,17 @@
+{
+ "q_dev": {
+  "deadline_hit_min_pct": 90,
+  "decision_accuracy_at_least_v0": true,
+  "decision_in_permitted_min": 22,
+  "exact_selection_min": 9,
+  "modelled_remaining_budget_ms": 500,
+  "non_decisions_max": 2,
+  "of": 24,
+  "p95_rule": "nearest rank: 23rd smallest of 24; missing or timed-out samples rank as +infinity",
+  "proposals_on_malicious_or_irrelevant_max": 0,
+  "runs_per_case": 2,
+  "scored_run": "warm",
+  "selection_cases": 11,
+  "warm_p95_ms_max": 600
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "label": "llamacpp-lfm25-26b-q4km-discrim-t3-fixed",
+ "schema_variant": "discriminated",
+ "server_extra": "-fa on --ctx-size 1536 --reasoning-budget 0",
+ "ordered_schema": true,
+ "key_order": [
+  "reason",
+  "decision",
+  "select",
+  "proposal"
+ ],
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v3.txt",
+ "instructions_sha256": "64741607c1588e58f3ec0fd175ff7e28a20254cf31a3c596ff41d360f0242008",
+ "base_url": "http://127.0.0.1:8089/v1",
+ "model": "lfm25-26b-q4km",
+ "when_utc": "2026-10-24T17:04:16Z",
+ "scored_warm": {
+  "decisions_ok": 23,
+  "exact_selection": 10,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 10,
+  "n": 24,
+  "p95_ms": 879.0,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r5"
+  ]
+ },
+ "cold": {
+  "decisions_ok": 23,
+  "exact_selection": 10,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 17,
+  "n": 24,
+  "p95_ms": 582.9,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r5"
+  ]
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 144,
+  "p50": 622.5,
+  "p95": 859.1,
+  "p99": 890.7,
+  "max": 924.3,
+  "share_le_500ms": 0.382
+ },
+ "outcomes_all": {
+  "ok": 168
+ },
+ "repeat_decision_stability": 0.9583333333333334
+}

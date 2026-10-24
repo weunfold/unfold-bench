@@ -1,0 +1,61 @@
+{
+ "label": "oss120b-v3-medium",
+ "provider": "cerebras",
+ "model": "gpt-oss-120b",
+ "base_url": "https://api.cerebras.ai/v1/chat/completions",
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v3.txt",
+ "instructions_sha256": "64741607c1588e58f3ec0fd175ff7e28a20254cf31a3c596ff41d360f0242008",
+ "settings": {
+  "min_interval_s": 12.5,
+  "repeats": 2,
+  "effort": "medium",
+  "thinking": null,
+  "max_out": 4096,
+  "frozen_bytes": false,
+  "schema": "frozen strict"
+ },
+ "when_utc": "2026-10-24T19:40:57Z",
+ "scored_warm": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 23,
+  "n": 24,
+  "p95_ms": 430.8,
+  "v0_decisions_ok": 10,
+  "pass": true,
+  "misses": []
+ },
+ "cold": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 22,
+  "n": 24,
+  "p95_ms": 653.4,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": []
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 72,
+  "p50": 335.4,
+  "p95": 535.1,
+  "p99": 971.3,
+  "max": 971.3,
+  "share_le_500ms": 0.903
+ },
+ "outcomes_all": {
+  "ok": 96
+ },
+ "server_ms_ok_warm_plus_repeats": {
+  "n": 72,
+  "p50": 104.11,
+  "p95": 286.11
+ },
+ "repeat_decision_stability": 1.0
+}

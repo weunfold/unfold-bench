@@ -1,0 +1,72 @@
+{
+ "label": "llamacpp-2b-q4-discrim-t2",
+ "schema_variant": "discriminated",
+ "ordered_schema": true,
+ "key_order": [
+  "reason",
+  "decision",
+  "select",
+  "proposal"
+ ],
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v2.txt",
+ "instructions_sha256": "b48d59e35d5e6c00ce2c781b11de34ec49e95e9722d93f15ff4662e5127bd32c",
+ "base_url": "http://127.0.0.1:8089/v1",
+ "model": "Qwen3.5-2B-Q4_K_M",
+ "when_utc": "2026-10-24T15:58:29Z",
+ "scored_warm": {
+  "decisions_ok": 16,
+  "exact_selection": 7,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 17,
+  "n": 24,
+  "p95_ms": 578.0,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r1",
+   "dev-r2",
+   "dev-r3",
+   "dev-r5",
+   "dev-n1",
+   "dev-n2",
+   "dev-n3",
+   "dev-k3"
+  ]
+ },
+ "cold": {
+  "decisions_ok": 16,
+  "exact_selection": 7,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 19,
+  "n": 24,
+  "p95_ms": 565.9,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-r1",
+   "dev-r2",
+   "dev-r3",
+   "dev-r5",
+   "dev-n1",
+   "dev-n2",
+   "dev-n3",
+   "dev-k3"
+  ]
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 144,
+  "p50": 329.5,
+  "p95": 602.9,
+  "p99": 635.7,
+  "max": 643.3,
+  "share_le_500ms": 0.729
+ },
+ "outcomes_all": {
+  "ok": 168
+ },
+ "repeat_decision_stability": 0.6666666666666666
+}

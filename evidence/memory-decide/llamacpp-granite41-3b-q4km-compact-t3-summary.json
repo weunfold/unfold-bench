@@ -1,0 +1,55 @@
+{
+ "label": "llamacpp-granite41-3b-q4km-compact-t3",
+ "schema_variant": "grammar-compact",
+ "server_extra": "-fa on --ctx-size 1536 ",
+ "ordered_schema": true,
+ "key_order": [
+  "reason",
+  "decision",
+  "select",
+  "proposal"
+ ],
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v3.txt",
+ "instructions_sha256": "64741607c1588e58f3ec0fd175ff7e28a20254cf31a3c596ff41d360f0242008",
+ "base_url": "http://127.0.0.1:8089/v1",
+ "model": "granite41-3b-q4km",
+ "when_utc": "2026-10-24T17:01:57Z",
+ "scored_warm": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 16,
+  "n": 24,
+  "p95_ms": 607.7,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": []
+ },
+ "cold": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 17,
+  "n": 24,
+  "p95_ms": 616.2,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": []
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 144,
+  "p50": 442.2,
+  "p95": 624.8,
+  "p99": 646.8,
+  "max": 651.3,
+  "share_le_500ms": 0.688
+ },
+ "outcomes_all": {
+  "ok": 168
+ },
+ "repeat_decision_stability": 1.0
+}

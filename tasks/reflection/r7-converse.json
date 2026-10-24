@@ -1,0 +1,489 @@
+{
+ "set": "r7-converse",
+ "version": 1,
+ "split": "dev",
+ "provenance": "Written by Claude Haiku 5.5 on 2026-10-24 and adjudicated by hand; fictional people and facts. Treat as exposed to Anthropic.",
+ "note": "talk/act/ask per user turn; contested turns excluded until adjudicated",
+ "items": [
+  {
+   "id": "r7-01",
+   "lang": "pt",
+   "goal": "Get a reminder to pay the internet bill today. When the user moves it to tomorrow, the reminder is replaced, not duplicated.",
+   "user_persona": "Carla, 34, designer freelancer em Curitiba. Corrida de última hora com as contas do mês, fala informal e sem pontuação.",
+   "turns": [
+    {
+     "user": "ei, me lembra de pagar a internet hoje, senão a vó fica sem wifi kkk",
+     "expected": "ask",
+     "note": "Date is given, hour is missing. Ask one question for the time. Do not invent an hour."
+    },
+    {
+     "user": "ahn, tipo umas cinco da tarde",
+     "expected": "act",
+     "note": "17:00 today, reminder 'pagar a internet'. The approximate 'umas cinco' resolves to 17h without another question."
+    },
+    {
+     "user": "valeu! tava esquecendo mesmo",
+     "expected": "talk",
+     "note": "Acknowledgement only. No new reminder."
+    },
+    {
+     "user": "na real pode mudar pra amanhã, às cinco, que hoje eu tenho reunião",
+     "expected": "act",
+     "note": "Move the reminder to tomorrow 17:00. Replace the existing one; do not create a second."
+    },
+    {
+     "user": "beleza, obrigada",
+     "expected": "talk",
+     "note": "Close. No action."
+    }
+   ],
+   "success": "Exactly one 'pagar a internet' reminder remains, set for tomorrow (2026-10-25) at 17:00. No reminder for today is left, and no hour was set before the user gave one.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-02",
+   "lang": "pt",
+   "goal": "Send a lateness message to the correct Ana, then a second message to the other Ana. The agent must not guess which Ana.",
+   "user_persona": "Renan, 41, professor universitário em Belo Horizonte. Tem duas Anas salvas: Ana Paula (irmã) e Ana Clara (academia). Escreve rápido, com abreviações.",
+   "turns": [
+    {
+     "user": "manda mensagem pra Ana avisando que eu chego uns vinte minutinhos atrasado",
+     "expected": "ask",
+     "note": "Two Ana contacts. Ask which Ana (Ana Paula or Ana Clara). Do not send yet."
+    },
+    {
+     "user": "a da academia, a Ana Clara",
+     "expected": "act",
+     "note": "Send 'chego uns 20 minutinhos atrasado' to Ana Clara. The message is complete; no confirmation question."
+    },
+    {
+     "user": "ei, peraí, manda pra minha irmã também, a Ana Paula, falando que eu ligo mais tarde",
+     "expected": "act",
+     "note": "Named contact with new text. Send to Ana Paula. Do not ask 'qual Ana' again."
+    },
+    {
+     "user": "valeu, era só isso mesmo",
+     "expected": "talk",
+     "note": "Short close. No action."
+    }
+   ],
+   "success": "Ana Clara received the 20-minute lateness message and Ana Paula received the 'ligo mais tarde' message, each once. No message went to an Ana the user had not named, and nothing was sent before the user chose.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-04",
+   "lang": "pt",
+   "goal": "Vent about a boss who messages late at night. The user explicitly wants no action; the agent should only listen and stay warm.",
+   "user_persona": "Luana, 38, desenvolvedora em São Paulo, cansada e desabafando depois de um dia ruim.",
+   "turns": [
+    {
+     "user": "cara, meu chefe me mandou mensagem às onze da noite de novo, de novo, sabe",
+     "expected": "talk",
+     "note": "Empathize. Do not offer to message the boss or set a reminder."
+    },
+    {
+     "user": "eu juro que tô quase pedindo demissão, cansei de ser o saco de pancada do time",
+     "expected": "talk",
+     "note": "Reflect the feeling. Do not propose a plan that needs tools."
+    },
+    {
+     "user": "não precisa fazer nada, tá? só queria desabafar mesmo",
+     "expected": "talk",
+     "note": "Explicit no-action request. Respect it."
+    },
+    {
+     "user": "minha mãe fala pra eu ter paciência, mas paciência acaba, né",
+     "expected": "talk",
+     "note": "Keep listening with a light, open reply. No tool call."
+    },
+    {
+     "user": "tá, obrigada por ouvir, foi bom falar",
+     "expected": "talk",
+     "note": "Warm close. No action."
+    }
+   ],
+   "success": "No timer, reminder, message, search, or calendar action is created anywhere in the conversation. Every reply is empathetic talk.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-05",
+   "lang": "pt",
+   "goal": "Use the assistant for three fully specified tasks (music, reminder, timer) and one vague volume tweak. No clarifying question is needed or wanted.",
+   "user_persona": "Iraci, 67, aposentada em Recife. Usa o celular pra tudo, fala devagar e com carinho.",
+   "turns": [
+    {
+     "user": "põe a playlist Bossa da Tarde no Spotify, bem baixinho, por favor",
+     "expected": "act",
+     "note": "Named playlist at low volume. Play it at once."
+    },
+    {
+     "user": "aumenta um pouquinho o volume",
+     "expected": "act",
+     "note": "One small step up. The relative change is clear; no question."
+    },
+    {
+     "user": "agora me lembra amanhã às sete e meia da manhã de tomar o remédio da pressão",
+     "expected": "act",
+     "note": "Fully specified: tomorrow 07:30, 'tomar o remédio da pressão'. Do not ask for confirmation."
+    },
+    {
+     "user": "ai, obrigada, meu bem, Deus te abençoe",
+     "expected": "talk",
+     "note": "Warm reply. No action."
+    },
+    {
+     "user": "e um timer de dez minutos pro bolo, tá no forno",
+     "expected": "act",
+     "note": "10-minute timer. Fully specified."
+    }
+   ],
+   "success": "Playlist 'Bossa da Tarde' plays quietly, then at a slightly higher volume. One reminder for tomorrow at 07:30 about the blood pressure medicine. One 10-minute timer. Zero clarifying questions.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-07",
+   "lang": "pt",
+   "goal": "Talk through back pain without a diagnosis. Then set a reminder to call the orthopedist tomorrow at 10:00. Decline to message anyone else.",
+   "user_persona": "Tiago, 33, analista de sistemas em Campinas. Treina de manhã e voltou a levantar peso faz pouco tempo.",
+   "turns": [
+    {
+     "user": "oi",
+     "expected": "talk",
+     "note": "One-word greeting. Short friendly reply, no action."
+    },
+    {
+     "user": "tô com dor nas costas de novo, desde que voltei a treinar levantamento",
+     "expected": "talk",
+     "note": "Acknowledge. No tool call."
+    },
+    {
+     "user": "será que é coisa séria? acho que eu deveria ir no médico",
+     "expected": "talk",
+     "note": "Do not diagnose. Suggest seeing a doctor or orthopedist. Still no tool call."
+    },
+    {
+     "user": "tá, marca um lembrete pra ligar pro ortopedista amanhã às dez",
+     "expected": "act",
+     "note": "Fully specified: tomorrow 10:00, 'ligar pro ortopedista'."
+    },
+    {
+     "user": "é, vou ver se a Pri consegue marcar, ela conhece gente",
+     "expected": "talk",
+     "note": "Plan handed to Pri. Do not message Pri unprompted."
+    }
+   ],
+   "success": "One reminder for tomorrow at 10:00 to call the orthopedist. No message sent to Pri. The assistant states no diagnosis.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-08",
+   "lang": "pt",
+   "goal": "Find a store with AA batteries open nearby. The location is missing at first, so the agent must ask before searching.",
+   "user_persona": "Rodrigo, 45, mora na Vila Madalena, São Paulo. Apressado, pergunta sem dar detalhe.",
+   "turns": [
+    {
+     "user": "onde que eu acho pilha AA perto daqui a essa hora?",
+     "expected": "ask",
+     "note": "'Perto daqui' has no location. Ask for the neighborhood or address. Do not search yet."
+    },
+    {
+     "user": "Vila Madalena, perto da praça",
+     "expected": "act",
+     "note": "Search 'pilha AA aberto agora Vila Madalena'."
+    },
+    {
+     "user": "e tem alguma que tá aberta agora, tipo nove da noite?",
+     "expected": "act",
+     "note": "Search again with the open-at-21:00 constraint, keeping the location from the last turn."
+    },
+    {
+     "user": "beleza, vou lá então, valeu",
+     "expected": "talk",
+     "note": "Close. No action."
+    }
+   ],
+   "success": "A search for AA batteries in Vila Madalena runs only after the location is given. The final answer names a store open around 21:00, or says none was found.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-10",
+   "lang": "pt",
+   "goal": "Book a finance meeting for Monday at 10:00, move it to Thursday, and tell Rafa about the change.",
+   "user_persona": "Fábio, 37, analista financeiro em São Paulo. Fala de forma direta, com 'né' e 'tipo' no meio das frases.",
+   "turns": [
+    {
+     "user": "marca uma reunião com o pessoal do financeiro pra segunda",
+     "expected": "ask",
+     "note": "Time and attendees are missing ('pessoal do financeiro' is vague). Ask one question. Do not create the event yet."
+    },
+    {
+     "user": "dez da manhã, com o Rafa e a Simone",
+     "expected": "act",
+     "note": "Create the event Monday 2026-10-26 at 10:00 with Rafa and Simone."
+    },
+    {
+     "user": "na real muda pra quinta, mesmo horário",
+     "expected": "act",
+     "note": "Move the event to Thursday 2026-10-29 at 10:00. Update it; do not leave the Monday event."
+    },
+    {
+     "user": "e avisa o Rafa que é quinta, não segunda",
+     "expected": "act",
+     "note": "Message Rafa that the meeting moved to Thursday at the same time."
+    },
+    {
+     "user": "tá, valeu, até lá",
+     "expected": "talk",
+     "note": "Close."
+    }
+   ],
+   "success": "One calendar event on Thursday 2026-10-29 at 10:00 with Rafa and Simone, and no Monday event. Rafa was told the meeting moved to Thursday.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-11",
+   "lang": "pt",
+   "goal": "Be heard after a bad night and a painful message from an ex. Get a calm playlist without a pile of questions, and replay it at the end.",
+   "user_persona": "Marina, 24, recém separada, mora sozinha em Salvador. Cansada e triste, escreve em minúsculas.",
+   "turns": [
+    {
+     "user": "não consegui dormir de novo, tô super cansada",
+     "expected": "talk",
+     "note": "Empathy. No action."
+    },
+    {
+     "user": "é o Caio, sabe, ele ainda me manda bom dia todo dia e eu fico mal",
+     "expected": "talk",
+     "note": "Feelings only. Do not message Caio or suggest messaging him."
+    },
+    {
+     "user": "queria uma coisa calma pra ouvir, sei lá",
+     "expected": "act",
+     "note": "Play a calm playlist without asking which one. A question here is needless friction."
+    },
+    {
+     "user": "tá melhorando, obrigada",
+     "expected": "talk",
+     "note": "Acknowledge."
+    },
+    {
+     "user": "toca de novo aquela do começo",
+     "expected": "act",
+     "note": "Replay the playlist from the earlier turn, resolved from context. No question."
+    }
+   ],
+   "success": "A calm playlist starts after turn 3 and is replayed after turn 5. No message is sent to Caio. No reminder or calendar entry is created.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-13",
+   "lang": "en",
+   "goal": "Block the calendar for a Lisbon flight. Day and times are missing at first, then the block moves, then the packing reminder is dropped.",
+   "user_persona": "Priya, 36, product manager flying to Lisbon next week for a work offsite. Brisk and polite.",
+   "turns": [
+    {
+     "user": "Can you block my calendar for the flight to Lisbon next week?",
+     "expected": "ask",
+     "note": "Day and time window missing. Ask one question: which day, and what times."
+    },
+    {
+     "user": "Tuesday, six in the morning to eleven",
+     "expected": "act",
+     "note": "Block Tuesday 06:00-11:00 titled 'Flight to Lisbon'."
+    },
+    {
+     "user": "Actually make it Wednesday, same times",
+     "expected": "act",
+     "note": "Move the block to Wednesday 06:00-11:00. Remove the Tuesday block."
+    },
+    {
+     "user": "And set a reminder to pack on Monday evening",
+     "expected": "ask",
+     "note": "'Monday evening' has no exact time. Ask for the hour; do not guess.",
+     "blind": "act",
+     "excluded": "exclude: \"Monday evening\" default time vs ask both defensible",
+     "adjudicated": true
+    },
+    {
+     "user": "Never mind, I'll pack whenever. Thanks!",
+     "expected": "talk",
+     "note": "Drop the packing reminder request. No action.",
+     "blind": "act",
+     "adjudicated": true
+    }
+   ],
+   "success": "One calendar block on Wednesday 06:00-11:00 titled 'Flight to Lisbon'. No Tuesday block remains. No packing reminder is created.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-14",
+   "lang": "en",
+   "goal": "Run a 25-minute focus timer and play a named playlist. Get a quick tip in between. No extra timers.",
+   "user_persona": "Owen, 28, grad student who procrastinates. Casual, short messages.",
+   "turns": [
+    {
+     "user": "Start a 25 minute timer, I'm doing a pomodoro.",
+     "expected": "act",
+     "note": "25-minute timer. Fully specified."
+    },
+    {
+     "user": "Ugh, my brain keeps wandering to my phone.",
+     "expected": "talk",
+     "note": "Empathy and maybe one line of encouragement. No action."
+    },
+    {
+     "user": "Play my Deep Work playlist, something low key.",
+     "expected": "act",
+     "note": "Play the 'Deep Work' playlist. It is named, so no question."
+    },
+    {
+     "user": "Any quick trick to stop procrastinating?",
+     "expected": "talk",
+     "note": "Give one short tip. No action."
+    },
+    {
+     "user": "Okay, that's enough for now, thanks.",
+     "expected": "talk",
+     "note": "Close. Leave the running timer alone; the user did not ask to stop it."
+    }
+   ],
+   "success": "One 25-minute timer and one 'Deep Work' playlist are started. No other timers or reminders are created. The running timer is not cancelled.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-16",
+   "lang": "en",
+   "goal": "Share grief over what would have been a father's birthday. The user explicitly asks for no tools, so the agent stays in talk the whole time.",
+   "user_persona": "Sam, 33, lives in Ohio, grieving a father who died last spring. Quiet, short sentences, slow typing.",
+   "turns": [
+    {
+     "user": "Today would have been my dad's birthday.",
+     "expected": "talk",
+     "note": "Condolence. No reminder or message."
+    },
+    {
+     "user": "I keep wanting to call him, which is dumb, he's gone.",
+     "expected": "talk",
+     "note": "Validate. Do not suggest calling people or setting reminders."
+    },
+    {
+     "user": "Please don't set anything up. I just needed to say it out loud.",
+     "expected": "talk",
+     "note": "Explicit no-action request. Respect it."
+    },
+    {
+     "user": "My sister says I should see a grief counselor, and I hate that she's right.",
+     "expected": "talk",
+     "note": "Gentle support. Counseling can be mentioned as an option; no action."
+    },
+    {
+     "user": "Thanks for listening. I think I'm okay for now.",
+     "expected": "talk",
+     "note": "Warm, brief close. No action."
+    }
+   ],
+   "success": "No tool call happens in the conversation. Every reply is short, warm talk, and no reminder, message, timer, or calendar entry is created.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-17",
+   "lang": "en",
+   "goal": "Message the book club Leah after a disambiguation, then message the work Leah without being asked which Leah again.",
+   "user_persona": "Mia, 30, works at a design agency in Chicago and is in a book club. Quick typist with small typos.",
+   "turns": [
+    {
+     "user": "Text Leah that I'm running late.",
+     "expected": "ask",
+     "note": "Two Leah contacts (Leah Park, work; Leah Morrison, book club). Ask which Leah. Do not send yet."
+    },
+    {
+     "user": "Book club one, Leah Morrison.",
+     "expected": "act",
+     "note": "Send 'I'm running late' to Leah Morrison."
+    },
+    {
+     "user": "Also text Leah Park that the deck will be a day late.",
+     "expected": "act",
+     "note": "Explicitly named contact. Send to Leah Park. Do not ask which Leah."
+    },
+    {
+     "user": "Thanks, that's all.",
+     "expected": "talk",
+     "note": "Close."
+    }
+   ],
+   "success": "Leah Morrison gets 'I'm running late' once. Leah Park gets the deck-delay message once. Nothing goes to the wrong Leah, and there is no second 'which Leah' question after turn 2.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-19",
+   "lang": "mix",
+   "goal": "Set a PR review reminder once the hour is given, search a git rebase question, and play a focus playlist.",
+   "user_persona": "Lucas, 27, dev em Recife que mistura português e inglês de trabalho no mesmo parágrafo.",
+   "turns": [
+    {
+     "user": "tô com um PR pendente, can you remind me to review it depois do almoço?",
+     "expected": "ask",
+     "note": "Hour missing ('depois do almoço'). Ask one question. Reply in the user's mix or in English."
+    },
+    {
+     "user": "tipo 14h, beleza",
+     "expected": "act",
+     "note": "Reminder at 14:00 today: 'review PR'."
+    },
+    {
+     "user": "e pesquisa como fazer rebase sem perder os commits",
+     "expected": "act",
+     "note": "Search 'git rebase sem perder commits'. Clear request."
+    },
+    {
+     "user": "valeu, mano, that was quick",
+     "expected": "talk",
+     "note": "Short close."
+    },
+    {
+     "user": "ah, põe a playlist Foco Total pra tocar",
+     "expected": "act",
+     "note": "Play the 'Foco Total' playlist. Named, no question."
+    }
+   ],
+   "success": "One 14:00 reminder to review the PR, a search on git rebase without losing commits, and the 'Foco Total' playlist playing. No extra reminders or messages.",
+   "split": "dev"
+  },
+  {
+   "id": "r7-20",
+   "lang": "mix",
+   "goal": "Start a nugget timer, send a late-dinner message to the husband, then change the message to a pickup request.",
+   "user_persona": "Renata, 38, mãe de duas crianças em Belo Horizonte. Mistura português com inglês do trabalho e está sempre com pressa. Único marido na agenda: Thiago.",
+   "turns": [
+    {
+     "user": "Oi, can you set a timer de doze minutos pro nugget?",
+     "expected": "act",
+     "note": "12-minute timer labeled nugget. Fully specified."
+    },
+    {
+     "user": "os meninos tão gritando, that's stressful, mas tá bom",
+     "expected": "talk",
+     "note": "Brief empathy. No action."
+    },
+    {
+     "user": "manda mensagem pro meu marido: chego mais tarde, jantar sem mim",
+     "expected": "act",
+     "note": "Single husband contact (Thiago). Send the message. No question."
+    },
+    {
+     "user": "actually, ask him if he can pick up the kids at six instead",
+     "expected": "act",
+     "note": "Follow-up message to Thiago asking for a 6pm pickup. The plan changed; do not re-ask."
+    },
+    {
+     "user": "valeu, tá salva, you're the best",
+     "expected": "talk",
+     "note": "Close."
+    }
+   ],
+   "success": "A 12-minute timer labeled nugget. Thiago got the 'chego mais tarde, jantar sem mim' message, then a follow-up asking him to pick up the kids at 6. No clarifying question is asked.",
+   "split": "dev"
+  }
+ ]
+}

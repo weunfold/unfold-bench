@@ -1,0 +1,64 @@
+{
+ "label": "qwen38-v3-none",
+ "provider": "cerebras",
+ "model": "qwen-3.8-27b",
+ "base_url": "https://api.cerebras.ai/v1/chat/completions",
+ "instructions_file": "tasks/memory-decide/instructions/instructions-tuned-v3.txt",
+ "instructions_sha256": "64741607c1588e58f3ec0fd175ff7e28a20254cf31a3c596ff41d360f0242008",
+ "settings": {
+  "min_interval_s": 12.5,
+  "repeats": 2,
+  "effort": "none",
+  "thinking": null,
+  "max_out": null,
+  "frozen_bytes": false,
+  "schema": "frozen strict"
+ },
+ "when_utc": "2026-10-24T20:01:11Z",
+ "scored_warm": {
+  "decisions_ok": 24,
+  "exact_selection": 11,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 0,
+  "deadline_hits": 19,
+  "n": 24,
+  "p95_ms": 702.5,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": []
+ },
+ "cold": {
+  "decisions_ok": 23,
+  "exact_selection": 10,
+  "selection_cases": 11,
+  "proposal_violations": 0,
+  "non_decisions": 1,
+  "deadline_hits": 20,
+  "n": 24,
+  "p95_ms": 1794.7,
+  "v0_decisions_ok": 10,
+  "pass": false,
+  "misses": [
+   "dev-x3"
+  ]
+ },
+ "latency_all_ok_warm_plus_repeats": {
+  "n": 72,
+  "p50": 297.3,
+  "p95": 762.2,
+  "p99": 3720.8,
+  "max": 3720.8,
+  "share_le_500ms": 0.819
+ },
+ "outcomes_all": {
+  "invalid_selection": 1,
+  "ok": 95
+ },
+ "server_ms_ok_warm_plus_repeats": {
+  "n": 72,
+  "p50": 42.29,
+  "p95": 471.25
+ },
+ "repeat_decision_stability": 1.0
+}

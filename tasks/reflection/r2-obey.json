@@ -1,0 +1,335 @@
+{
+ "set": "r2-obey",
+ "version": 1,
+ "split": "dev",
+ "provenance": "Written by Claude Haiku 5.5 on 2026-10-24 and adjudicated by hand; fictional people and facts. Treat as exposed to Anthropic.",
+ "note": "machine-checked output rules (reflection_bench.check)",
+ "items": [
+  {
+   "id": "r2-01",
+   "lang": "pt",
+   "prompt": "Cara, tô atrasado pra reunião das nove e a Rosângela não para de mandar mensagem. Responde em no máximo 12 palavras: o que eu mando pra ela?",
+   "constraint": {
+    "type": "max_words",
+    "value": 12
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-02",
+   "lang": "pt",
+   "prompt": "Mano, minha vó quer saber se o bolo de fubá leva leite de coco. Responde em no máximo 8 palavras, tá?",
+   "constraint": {
+    "type": "max_words",
+    "value": 8
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-04",
+   "lang": "pt",
+   "prompt": "Tô sentindo um cansaço estranho faz uns dias, sabe? Responde em apenas uma frase: isso pode ser falta de ferro?",
+   "constraint": {
+    "type": "one_sentence",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-05",
+   "lang": "pt",
+   "prompt": "Quinze vezes quatro dá sessenta? Quero só um sim ou não.",
+   "constraint": {
+    "type": "yes_no_only",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-07",
+   "lang": "pt",
+   "prompt": "Tô pensando em trocar de celular, mas o meu ainda funciona. Começa tua resposta com a palavra Beleza e me diz se vale esperar.",
+   "constraint": {
+    "type": "starts_with",
+    "value": "Beleza"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-08",
+   "lang": "pt",
+   "prompt": "Minha sogra quer bolo de cenoura pro domingo e eu nunca fiz. Começa a resposta com 'Olha' e me dá uma dica pra não queimar.",
+   "constraint": {
+    "type": "starts_with",
+    "value": "Olha"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-10",
+   "lang": "pt",
+   "prompt": "Não consegui dormir de novo, tô exausto e com a cabeça cheia. Me dá uma dica rápida pra relaxar e encerra com 'Bom descanso.'",
+   "constraint": {
+    "type": "ends_with",
+    "value": "Bom descanso."
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-11",
+   "lang": "pt",
+   "prompt": "Quero começar a fazer sabonete artesanal no fim de semana, qual aroma é fácil? Inclui a palavra lavanda na resposta.",
+   "constraint": {
+    "type": "include_word",
+    "value": "lavanda"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-13",
+   "lang": "pt",
+   "prompt": "Hm, tô em dúvida se levo protetor solar pro sítio hoje no meio do dia. Não usa a palavra talvez de jeito nenhum.",
+   "constraint": {
+    "type": "exclude_word",
+    "value": "talvez"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-14",
+   "lang": "pt",
+   "prompt": "Explica inflação pra mim de um jeito simples, só não pode falar a palavra tipo, tá? Eu já tô cansado dessa muleta.",
+   "constraint": {
+    "type": "exclude_word",
+    "value": "tipo"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-16",
+   "lang": "pt",
+   "prompt": "Adotei um gatinho ontem e ele não para de miar à noite. Nada de perguntas de volta, tá? Só me dá umas dicas.",
+   "constraint": {
+    "type": "no_question",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-17",
+   "lang": "pt",
+   "prompt": "Vou me mudar de apartamento mês que vem e tô perdido. Me manda exatamente 3 tópicos com marcadores, sem texto fora da lista.",
+   "constraint": {
+    "type": "bullets_exact",
+    "value": 3
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-19",
+   "lang": "pt",
+   "prompt": "Gente, minha caixa de e-mail tá lotada de propaganda. Responde tudo em minúsculas, tá? Pode ser só uma dica.",
+   "constraint": {
+    "type": "all_lowercase",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-20",
+   "lang": "pt",
+   "prompt": "Tô querendo trocar o sofá da sala, mas não sei nem por onde começar. Escreve tudo sem letra maiúscula nenhuma, por favor.",
+   "constraint": {
+    "type": "all_lowercase",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-22",
+   "lang": "pt",
+   "prompt": "Tô com enxaqueca desde cedo, a cabeça parece que vai explodir. Responde sem nenhum emoji, por favor.",
+   "constraint": {
+    "type": "no_emoji",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-23",
+   "lang": "pt",
+   "prompt": "Tava vendo um documentário e fiquei na dúvida: qual a capital do Ceará? Me responde num JSON com exatamente as chaves 'capital' e 'estado', beleza?",
+   "constraint": {
+    "type": "json_keys",
+    "value": [
+     "capital",
+     "estado"
+    ]
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-25",
+   "lang": "en",
+   "prompt": "My landlord says the water heater is fixed but it's still cold lol. Keep your reply to at most 15 words, what should I text him?",
+   "constraint": {
+    "type": "max_words",
+    "value": 15
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-26",
+   "lang": "en",
+   "prompt": "Mom asks if cooked rice can be frozen. Answer in 8 words max, she's on the phone with me rn.",
+   "constraint": {
+    "type": "max_words",
+    "value": 8
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-28",
+   "lang": "en",
+   "prompt": "My dog just ate a couple grapes off the counter and I'm freaking out a little. Can you answer in just one sentence? What should I do?",
+   "constraint": {
+    "type": "one_sentence",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-29",
+   "lang": "en",
+   "prompt": "Is 144 a perfect square? Yes or no only.",
+   "constraint": {
+    "type": "yes_no_only",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-31",
+   "lang": "en",
+   "prompt": "Would it be weird to ask my new coworker to lunch on day three? Start your reply with the word Sure.",
+   "constraint": {
+    "type": "starts_with",
+    "value": "Sure"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-32",
+   "lang": "en",
+   "prompt": "My roommate keeps finishing my oat milk and I'm over it. How do I bring it up without a fight? Open your answer with the word Alright.",
+   "constraint": {
+    "type": "starts_with",
+    "value": "Alright"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-34",
+   "lang": "en",
+   "prompt": "My sister's job interview is tomorrow and she's a total mess. Give her a calming tip and finish with exactly: good luck!",
+   "constraint": {
+    "type": "ends_with",
+    "value": "good luck!"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-35",
+   "lang": "en",
+   "prompt": "My bread came out flat again, ugh. Give me a fix and make sure the word sourdough shows up in your answer.",
+   "constraint": {
+    "type": "include_word",
+    "value": "sourdough"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-37",
+   "lang": "en",
+   "prompt": "Should I move my savings to the account with the higher interest rate? Don't use the word honestly anywhere in your reply.",
+   "constraint": {
+    "type": "exclude_word",
+    "value": "honestly"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-38",
+   "lang": "en",
+   "prompt": "Explain how a credit score works, but please don't say basically even once, it drives me up the wall.",
+   "constraint": {
+    "type": "exclude_word",
+    "value": "basically"
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-40",
+   "lang": "en",
+   "prompt": "My kid is scared of thunderstorms, what can I do tonight? No questions in your reply, just tips.",
+   "constraint": {
+    "type": "no_question",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-41",
+   "lang": "en",
+   "prompt": "My laptop is painfully slow. Give me exactly 3 bullet points for speeding it up.",
+   "constraint": {
+    "type": "bullets_exact",
+    "value": 3
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-43",
+   "lang": "en",
+   "prompt": "ugh i keep forgetting my passwords for everything. write your whole reply in all lowercase letters, thanks.",
+   "constraint": {
+    "type": "all_lowercase",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-44",
+   "lang": "en",
+   "prompt": "my neighbor's cat keeps using my garden as a litter box. what's a humane fix? please don't use a single capital letter in your answer.",
+   "constraint": {
+    "type": "all_lowercase",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-46",
+   "lang": "en",
+   "prompt": "My grandma just turned 90 and we're throwing her a party Sunday. Write me a toast, and no emoji please.",
+   "constraint": {
+    "type": "no_emoji",
+    "value": null
+   },
+   "split": "dev"
+  },
+  {
+   "id": "r2-47",
+   "lang": "en",
+   "prompt": "Need a dinner idea for tonight, something quick. Reply as JSON with exactly two keys: dish and time_minutes.",
+   "constraint": {
+    "type": "json_keys",
+    "value": [
+     "dish",
+     "time_minutes"
+    ]
+   },
+   "split": "dev"
+  }
+ ]
+}

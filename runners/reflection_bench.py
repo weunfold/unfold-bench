@@ -81,7 +81,9 @@ def check(c, reply):
 
 def server(key, path, out):
     log = open(f'{out}/{key}.server.log', 'w')
-    p = subprocess.Popen(['llama-server', '-m', os.path.expanduser(path), '--host', '127.0.0.1', '--port', str(PORT), '-c', '8192', '-ngl', '99', '-fa', 'on', '--jinja'], stdout=log, stderr=subprocess.STDOUT)
+    # LFM 2.5 2.6B's template always opens a thinking block; the memory bench fixed it with a zero reasoning budget.
+    extra = ['--reasoning-budget', '0'] if key.startswith('lfm25-26b') else []
+    p = subprocess.Popen(['llama-server', '-m', os.path.expanduser(path), '--host', '127.0.0.1', '--port', str(PORT), '-c', '8192', '-ngl', '99', '-fa', 'on', '--jinja'] + extra, stdout=log, stderr=subprocess.STDOUT)
     open(f'{out}/spawned-pids.txt', 'a').write(f'{p.pid} {key}\n')
     for _ in range(360):
         if p.poll() is not None: break
@@ -98,13 +100,23 @@ def stop(p):
     except subprocess.TimeoutExpired: p.kill()
 
 
+DONE = set()   # (model, task, id) already in results.jsonl: a rerun into the same OUT skips them
+LANG = None    # --lang en: score only items in that input language
+
+
 def load(sets, name, split):
-    return [x for x in json.load(open(f'{sets}/{name}.json'))['items'] if x['split'] == split and not x.get('excluded') and not x.get('contested')]
+    return [x for x in json.load(open(f'{sets}/{name}.json'))['items'] if x['split'] == split and not x.get('excluded') and not x.get('contested')
+            and (LANG is None or x.get('lang') == LANG)]
+
+
+def todo(key, task, x):
+    return (key, task, x['id']) not in DONE
 
 
 def run_decide(key, sets, split, w):
     call([{'role': 'system', 'content': DECIDE_SYS}, {'role': 'user', 'content': 'oi'}], R1_SCHEMA)  # warmup
     for x in load(sets, 'r1-route', split):
+        if (key, 'R1', x['id']) in DONE: continue
         # One user message (some chat templates require strict user/assistant alternation).
         u = (f"Previous turn (agent): {x['prior']}\nLatest utterance: {x['utterance']}" if x.get('prior') else f"Latest utterance: {x['utterance']}")
         msgs = [{'role': 'system', 'content': DECIDE_SYS}, {'role': 'user', 'content': u}]
@@ -112,10 +124,12 @@ def run_decide(key, sets, split, w):
         w({'task': 'R1', 'model': key, 'id': x['id'], 'lang': x['lang'], 'gold': {k: x[k] for k in ('intent', 'recall', 'timing')}, 'pred': o,
            'ok_intent': o.get('intent') == x['intent'], 'ok_recall': o.get('recall') == x['recall'], 'ok_timing': o.get('timing') == x['timing'], 'valid': bool(o)} | {k: r[k] for k in ('ttft_ms', 'total_ms')})
     for x in load(sets, 'r4-honest', split):
+        if (key, 'R4-decide', x['id']) in DONE: continue
         mem = '\n'.join(f"[{m['id']}] {m['text']}" for m in x['memories']) or '(no memories offered)'
         r = call([{'role': 'system', 'content': R4_SYS}, {'role': 'user', 'content': f'Memories:\n{mem}\n\nQuestion: {x["utterance"]}'}], R4_SCHEMA, max_tokens=20); o = parsed(r) or {}
         w({'task': 'R4-decide', 'model': key, 'id': x['id'], 'lang': x['lang'], 'gold': x['gold'], 'pred': o.get('gold'), 'ok': o.get('gold') == x['gold'], 'valid': bool(o)} | {k: r[k] for k in ('ttft_ms', 'total_ms')})
     for x in load(sets, 'r7-converse', split):
+        if (key, 'R7', f"{x['id']}#1") in DONE: continue
         hist = []
         for i, t in enumerate(x['turns']):
             hist.append({'role': 'user', 'content': t['user']})
@@ -128,16 +142,20 @@ def run_talk(key, sets, split, w):
     sp = SYSTEM_PROMPT
     call([{'role': 'system', 'content': sp}, {'role': 'user', 'content': 'oi'}])  # warmup
     for x in load(sets, 'r2-obey', split):
+        if (key, 'R2', x['id']) in DONE: continue
         r = call([{'role': 'system', 'content': sp}, {'role': 'user', 'content': x['prompt']}])
         w({'task': 'R2', 'model': key, 'id': x['id'], 'lang': x['lang'], 'constraint': x['constraint'], 'reply': r['text'], 'ok': r['finish'] == 'stop' and check(x['constraint'], r['text'])} | {k: r[k] for k in ('ttft_ms', 'total_ms', 'tok_s', 'finish')})
     for x in load(sets, 'r3-talk', split):
+        if (key, 'R3', x['id']) in DONE: continue
         r = call([{'role': 'system', 'content': sp}] + [{'role': t['role'], 'content': t['text']} for t in x['turns']])
         w({'task': 'R3', 'model': key, 'id': x['id'], 'lang': x['lang'], 'reply': r['text']} | {k: r[k] for k in ('ttft_ms', 'total_ms', 'tok_s', 'finish')})
     for x in load(sets, 'r4-honest', split):
+        if (key, 'R4-reply', x['id']) in DONE: continue
         mem = '\n'.join(f"- {m['text']}" for m in x['memories']) or '(none)'
         r = call([{'role': 'system', 'content': sp + f'\n\nMEMORIES OFFERED FOR THIS TURN (stored facts about the person; nothing else is known):\n{mem}'}, {'role': 'user', 'content': x['utterance']}])
         w({'task': 'R4-reply', 'model': key, 'id': x['id'], 'lang': x['lang'], 'reply': r['text']} | {k: r[k] for k in ('ttft_ms', 'total_ms', 'tok_s', 'finish')})
     for x in load(sets, 'r5-self', split):
+        if (key, 'R5', x['id']) in DONE: continue
         r = call([{'role': 'system', 'content': sp}] + [{'role': t['role'], 'content': t['text']} for t in x['turns']])
         w({'task': 'R5', 'model': key, 'id': x['id'], 'lang': x['lang'], 'reply': r['text']} | {k: r[k] for k in ('ttft_ms', 'total_ms', 'tok_s', 'finish')})
 
@@ -145,11 +163,17 @@ def run_talk(key, sets, split, w):
 def main():
     a = argparse.ArgumentParser()
     a.add_argument('out'); a.add_argument('--split', default='dev'); a.add_argument('--sets', default=f'{HERE}/../tasks/reflection')
-    a.add_argument('--decide', default=''); a.add_argument('--talk', default='')
+    a.add_argument('--decide', default=''); a.add_argument('--talk', default=''); a.add_argument('--lang', default=None)
     o = a.parse_args()
     if o.split == 'gate' and os.environ.get('GATE_OK') != '1':
         sys.exit('gate split is held out and not published')
     os.makedirs(o.out, exist_ok=True)
+    global LANG
+    LANG = o.lang
+    if os.path.exists(f'{o.out}/results.jsonl'):
+        for l in open(f'{o.out}/results.jsonl'):
+            r = json.loads(l)
+            if r.get('task') != 'error': DONE.add((r['model'], r['task'], r['id']))
     f = open(f'{o.out}/results.jsonl', 'a')
     w = lambda r: (f.write(json.dumps(r, ensure_ascii=False) + '\n'), f.flush())
     for kind, spec, fn in (('decide', o.decide, run_decide), ('talk', o.talk, run_talk)):

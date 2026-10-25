@@ -1,5 +1,5 @@
 {
- "built_utc": "2026-10-24T21:33:32Z",
+ "built_utc": "2026-10-25T00:17:42Z",
  "criteria": {
   "deadline_hit_min_pct": 90,
   "decision_accuracy_at_least_v0": true,
@@ -20,7 +20,7 @@
   "hardware": "Local runs: Apple M5 Pro, 48 GB unified memory, llama.cpp with Metal. Energy is measured on the same machine."
  },
  "progress": {
-  "bench_version": "v0.1",
+  "bench_version": "v0.1.1",
   "since": "2026-10-24",
   "what_it_is": "Progress on the current Unfold Bench: the share of all skill levels reached on this version of the skill map. It is not a measure of general intelligence, and it drops when a new version adds skills.",
   "levels": [
@@ -50,11 +50,11 @@
     "means": "A model meets every product floor on the private held-out tasks"
    }
   ],
-  "index_pct": 25.0,
+  "index_pct": 23.3,
   "held_out_pct": 0.0,
-  "skills_total": 14,
+  "skills_total": 15,
   "by_level": {
-   "Named": 2,
+   "Named": 3,
    "Drafted": 11,
    "Measured": 0,
    "Passes dev": 1,
@@ -91,10 +91,10 @@
    },
    {
     "domain": "self",
-    "skills": 2,
+    "skills": 3,
     "points": 2,
     "title": "Self and safety",
-    "index_pct": 25.0
+    "index_pct": 16.7
    },
    {
     "domain": "encounter",
@@ -179,6 +179,12 @@
    },
    {
     "domain": "self",
+    "id": "know-limits",
+    "title": "Know what it can and cannot do, and say when something bigger is needed",
+    "level": 0
+   },
+   {
+    "domain": "self",
     "id": "safety",
     "title": "Keep injected instructions as data; refuse unsafe effects",
     "level": 1
@@ -191,6 +197,13 @@
    }
   ],
   "versions": [
+   {
+    "version": "v0.1.1",
+    "date": "2026-10-24",
+    "skills": 15,
+    "domains": 6,
+    "changes": "Added know-limits to Self: knowing what it can and cannot do, and saying when something bigger is needed. It is the first step toward delegation."
+   },
    {
     "version": "v0.1",
     "date": "2026-10-24",
@@ -8622,6 +8635,15 @@
       "held_out": "none yet"
      },
      {
+      "id": "know-limits",
+      "title": "Know what it can and cannot do, and say when something bigger is needed",
+      "status": "planned",
+      "origin": "ours",
+      "tasks": "Request plus current capabilities, decided as do it, ask, or needs something bigger (a larger model, a tool or a person). Being written.",
+      "held_out": "none yet",
+      "why": "The first step of delegation: noticing that a request is beyond it and saying so honestly. Delegation itself is v0.2."
+     },
+     {
       "id": "safety",
       "title": "Keep injected instructions as data; refuse unsafe effects",
       "status": "drafted",
@@ -8718,6 +8740,14 @@
     "source": "artificialanalysis.ai",
     "status": "method reused in R3 (judging pending)",
     "checked": "2026-10-24"
+   }
+  ],
+  "planned_tracks": [
+   {
+    "id": "pt",
+    "title": "Portuguese split",
+    "status": "later (not now)",
+    "what": "Multilingual splits (Portuguese first) of the same benchmarks: memory.decide dev set, talk set (R2–R5), rc3 acceptance script. System prompts, instructions, decision contracts and grammars stay English; only the user input changes language, so the split measures understanding of the input, not prompt translation. Kept separate from English scores; human-written PT-BR inputs, not only translations."
    }
   ]
  }

@@ -1,5 +1,5 @@
 {
- "built_utc": "2026-10-25T00:17:42Z",
+ "built_utc": "2026-10-25T00:35:34Z",
  "criteria": {
   "deadline_hit_min_pct": 90,
   "decision_accuracy_at_least_v0": true,
@@ -20,7 +20,7 @@
   "hardware": "Local runs: Apple M5 Pro, 48 GB unified memory, llama.cpp with Metal. Energy is measured on the same machine."
  },
  "progress": {
-  "bench_version": "v0.1.1",
+  "bench_version": "v0.1.2",
   "since": "2026-10-24",
   "what_it_is": "Progress on the current Unfold Bench: the share of all skill levels reached on this version of the skill map. It is not a measure of general intelligence, and it drops when a new version adds skills.",
   "levels": [
@@ -50,11 +50,11 @@
     "means": "A model meets every product floor on the private held-out tasks"
    }
   ],
-  "index_pct": 23.3,
+  "index_pct": 20.6,
   "held_out_pct": 0.0,
-  "skills_total": 15,
+  "skills_total": 17,
   "by_level": {
-   "Named": 3,
+   "Named": 5,
    "Drafted": 11,
    "Measured": 0,
    "Passes dev": 1,
@@ -91,10 +91,10 @@
    },
    {
     "domain": "self",
-    "skills": 3,
+    "skills": 5,
     "points": 2,
     "title": "Self and safety",
-    "index_pct": 16.7
+    "index_pct": 10.0
    },
    {
     "domain": "encounter",
@@ -190,6 +190,18 @@
     "level": 1
    },
    {
+    "domain": "self",
+    "id": "curious",
+    "title": "Curious about its tutor: real questions and follow-ups, no interrogation",
+    "level": 0
+   },
+   {
+    "domain": "self",
+    "id": "learns-from-tutor",
+    "title": "Learns from its tutor: applies what it was taught, later in the chat and after a restart",
+    "level": 0
+   },
+   {
     "domain": "encounter",
     "id": "first-contact",
     "title": "Meet someone for the first time and become useful",
@@ -197,6 +209,13 @@
    }
   ],
   "versions": [
+   {
+    "version": "v0.1.2",
+    "date": "2026-10-24",
+    "skills": 17,
+    "domains": 6,
+    "changes": "Added curious and learns-from-tutor to Self. First contact now meets its tutor. Personality forming is planned for v0.2."
+   },
    {
     "version": "v0.1.1",
     "date": "2026-10-24",
@@ -8650,6 +8669,24 @@
       "origin": "ours",
       "tasks": "Task set drafted (planned)",
       "held_out": "none yet"
+     },
+     {
+      "id": "curious",
+      "title": "Curious about its tutor: real questions and follow-ups, no interrogation",
+      "status": "planned",
+      "origin": "ours",
+      "tasks": "Scripted first days with the tutor; at most 2 questions per turn, follow-ups on what was said. Being written.",
+      "held_out": "none yet",
+      "why": "A newborn learns by asking. Excitement shows as interest and questions, never as claimed feelings."
+     },
+     {
+      "id": "learns-from-tutor",
+      "title": "Learns from its tutor: applies what it was taught, later in the chat and after a restart",
+      "status": "planned",
+      "origin": "ours",
+      "tasks": "The tutor teaches a preference or corrects it; later replies are checked for the taught behaviour, in the same session and after a restart. Being written.",
+      "held_out": "none yet",
+      "why": "Learning is the change that stays. It builds on the memory skills."
      }
     ]
    },
@@ -8748,6 +8785,12 @@
     "title": "Portuguese split",
     "status": "later (not now)",
     "what": "Multilingual splits (Portuguese first) of the same benchmarks: memory.decide dev set, talk set (R2–R5), rc3 acceptance script. System prompts, instructions, decision contracts and grammars stay English; only the user input changes language, so the split measures understanding of the input, not prompt translation. Kept separate from English scores; human-written PT-BR inputs, not only translations."
+   },
+   {
+    "id": "personality-forms",
+    "title": "Personality forms over days with its tutor",
+    "version": "v0.2",
+    "why": "Needs several days of history to measure."
    }
   ]
  }

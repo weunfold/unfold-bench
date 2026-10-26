@@ -1,0 +1,89 @@
+{
+ "skill": "perception.hear-emotion",
+ "date": "2026-10-26",
+ "model": "LAION Humaneness Ears Medium",
+ "model_source": "https://huggingface.co/laion/humaneness-ears-base-medium",
+ "model_licence": "CC BY 4.0",
+ "dataset": {
+  "name": "emoUERJ",
+  "source": "https://zenodo.org/records/5427549",
+  "licence": "CC BY 4.0",
+  "credit": "R. G. Bastos Germano, M. Pompeu Tcheou, F. da Rocha Henriques and S. Pinto Gomes Junior (2021). emoUERJ: an emotional speech database in Portuguese. Zenodo, CC BY 4.0.",
+  "clips": 377,
+  "speakers": 8,
+  "labels": [
+   "anger",
+   "happiness",
+   "neutral",
+   "sadness"
+  ]
+ },
+ "hardware": "Apple M5 Pro, CPU only, 4 threads",
+ "cpu_s_per_clip_p50": 0.04,
+ "method": {
+  "zero_shot": "argmax over emotion groups of Ears' display z-scores; no labels used",
+  "probe_loso": "logistic regression on Ears' 192 raw scores, leave one speaker out (8 folds)",
+  "uar": "unweighted average recall over the 4 emotions; chance is 0.25"
+ },
+ "zero_shot": {
+  "acc": 0.462,
+  "uar": 0.47,
+  "confusion_rows_gold": [
+   [
+    53,
+    20,
+    21,
+    0
+   ],
+   [
+    23,
+    36,
+    27,
+    5
+   ],
+   [
+    1,
+    10,
+    81,
+    0
+   ],
+   [
+    3,
+    3,
+    90,
+    4
+   ]
+  ]
+ },
+ "probe_loso": {
+  "acc": 0.812,
+  "uar": 0.811,
+  "confusion_rows_gold": [
+   [
+    82,
+    7,
+    4,
+    1
+   ],
+   [
+    6,
+    67,
+    10,
+    8
+   ],
+   [
+    1,
+    7,
+    75,
+    9
+   ],
+   [
+    2,
+    3,
+    13,
+    82
+   ]
+  ]
+ },
+ "runner": "runners/hear_emotion_emouerj.py"
+}

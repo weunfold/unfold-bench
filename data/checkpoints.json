@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-25",
+ "checked": "2026-10-26",
  "models": {
   "granite41-3b-q4km": {
    "base_repo": "ibm-granite/granite-4.1-3b",

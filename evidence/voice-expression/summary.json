@@ -1,0 +1,164 @@
+{
+ "skill": "conversation.voice-expression",
+ "date": "2026-10-26",
+ "cases": "tasks/voice-expression/cases.jsonl (160 dev cases: 83 en, 77 pt)",
+ "settings": "The instruction block in tasks/voice-expression/system_prompt.md; a 400-token reply budget. Expression score 0-100, see tasks/voice-expression/README.md.",
+ "note": "Cloud rows ran on the providers' servers, not on the device. Local rows ran on a desktop PC with an RTX 4060 Ti. Latency is the median wall time per reply as the runner saw it, network included for cloud rows. Cost is at each provider's public list price, from the usage tokens in the replies. Billed is what our API proxy reported per call, where it reports it.",
+ "rows": [
+  {
+   "name": "Celeris 1 Magnus",
+   "provider": "Celeris",
+   "where": "cloud",
+   "runtime": "Celeris API",
+   "expression": 93.9,
+   "say_acc": 95.6,
+   "format_error": 0.6,
+   "latency_p50_ms": 1444,
+   "usd_per_100": 0.039,
+   "cost_basis": "Celeris list price: $0.20/M input, $0.70/M output; cached input billed as input",
+   "billed_usd_per_100": null,
+   "by_lang": {
+    "en": 95.8,
+    "pt": 91.8
+   },
+   "score": "evidence/voice-expression/celeris-1-magnus.json",
+   "replies": "evidence/voice-expression/replies/celeris-1-magnus.jsonl"
+  },
+  {
+   "name": "DeepSeek V4.1 Flash",
+   "provider": "DeepSeek",
+   "where": "cloud",
+   "runtime": "OpenAI-compatible cloud API",
+   "expression": 87.6,
+   "say_acc": 90.6,
+   "format_error": 18.1,
+   "latency_p50_ms": 3953,
+   "usd_per_100": 0.0318,
+   "cost_basis": "DeepSeek peak list price: $0.30/M input, $0.006/M cached input, $1.20/M output",
+   "billed_usd_per_100": 0.0085,
+   "by_lang": {
+    "en": 87.5,
+    "pt": 87.7
+   },
+   "score": "evidence/voice-expression/deepseek-v4.1-flash.json",
+   "replies": "evidence/voice-expression/replies/deepseek-v4.1-flash.jsonl"
+  },
+  {
+   "name": "Celeris 1",
+   "provider": "Celeris",
+   "where": "cloud",
+   "runtime": "Celeris API",
+   "expression": 79.3,
+   "say_acc": 76.2,
+   "format_error": 6.2,
+   "latency_p50_ms": 616,
+   "usd_per_100": 0.027,
+   "cost_basis": "Celeris list price: $0.20/M input, $0.70/M output; cached input billed as input",
+   "billed_usd_per_100": null,
+   "by_lang": {
+    "en": 78.5,
+    "pt": 80.1
+   },
+   "score": "evidence/voice-expression/celeris-1.json",
+   "replies": "evidence/voice-expression/replies/celeris-1.jsonl"
+  },
+  {
+   "name": "IFM K2 Horizon 375B, effort low",
+   "provider": "IFM",
+   "where": "cloud",
+   "runtime": "IFM API",
+   "expression": 54.0,
+   "say_acc": 50.0,
+   "format_error": 28.7,
+   "latency_p50_ms": 2171,
+   "usd_per_100": null,
+   "cost_basis": "price not known",
+   "billed_usd_per_100": null,
+   "by_lang": {
+    "en": 47.7,
+    "pt": 60.8
+   },
+   "score": "evidence/voice-expression/ifm-k2-horizon-375b-effort-low.json",
+   "replies": "evidence/voice-expression/replies/ifm-k2-horizon-375b-effort-low.jsonl"
+  },
+  {
+   "name": "Granite 4.2 8B, thinking off",
+   "provider": "IBM",
+   "where": "local",
+   "runtime": "llama.cpp, Q4_K_M, desktop PC with an RTX 4060 Ti",
+   "expression": 64.4,
+   "say_acc": 56.2,
+   "format_error": 18.1,
+   "latency_p50_ms": 2362,
+   "usd_per_100": 0,
+   "cost_basis": "local, energy not priced",
+   "billed_usd_per_100": null,
+   "by_lang": {
+    "en": 65.1,
+    "pt": 63.6
+   },
+   "score": "evidence/voice-expression/granite-4.2-8b-thinking-off.json",
+   "replies": "evidence/voice-expression/replies/granite-4.2-8b-thinking-off.jsonl"
+  },
+  {
+   "name": "Granite 4.2 3B, thinking off",
+   "provider": "IBM",
+   "where": "local",
+   "runtime": "Q4_K_M, desktop PC with an RTX 4060 Ti, through a local proxy",
+   "expression": 42.2,
+   "say_acc": 31.2,
+   "format_error": 1.2,
+   "latency_p50_ms": 2753,
+   "usd_per_100": 0,
+   "cost_basis": "local, energy not priced",
+   "billed_usd_per_100": null,
+   "by_lang": {
+    "en": 46.4,
+    "pt": 37.6
+   },
+   "score": "evidence/voice-expression/granite-4.2-3b-thinking-off.json",
+   "replies": "evidence/voice-expression/replies/granite-4.2-3b-thinking-off.jsonl"
+  },
+  {
+   "name": "Oracle: follows the gold labels",
+   "provider": null,
+   "where": "baseline",
+   "runtime": null,
+   "expression": 100.0,
+   "say_acc": 100.0,
+   "format_error": 0.0,
+   "latency_p50_ms": null,
+   "usd_per_100": null,
+   "cost_basis": null,
+   "billed_usd_per_100": null,
+   "by_lang": {
+    "en": 100.0,
+    "pt": 100.0
+   },
+   "score": "evidence/voice-expression/oracle.json",
+   "replies": "evidence/voice-expression/replies/oracle.jsonl"
+  },
+  {
+   "name": "Always text",
+   "provider": null,
+   "where": "baseline",
+   "runtime": null,
+   "expression": 37.8,
+   "say_acc": 26.9,
+   "format_error": 0.0,
+   "latency_p50_ms": null,
+   "usd_per_100": null,
+   "cost_basis": null,
+   "billed_usd_per_100": null,
+   "by_lang": {
+    "en": 40.6,
+    "pt": 34.9
+   },
+   "score": "evidence/voice-expression/always-text.json",
+   "replies": "evidence/voice-expression/replies/always-text.jsonl"
+  }
+ ],
+ "pending": [
+  "A thinking-budget sweep for Granite 4.2 3B on a 60-case subset (30 cases for a 4096-token budget) is still running; it is added once every run is complete."
+ ]
+}

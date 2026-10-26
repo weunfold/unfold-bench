@@ -1,0 +1,7834 @@
+{
+ "replies": "evidence/voice-expression/replies/deepseek-v4.1-flash.jsonl",
+ "models": {
+  "deepseek-ai/DeepSeek-V4.1-Flash-1017": 160
+ },
+ "cases": 160,
+ "missing": 0,
+ "weights": {
+  "say": 0.4,
+  "mood": 0.25,
+  "events": 0.2,
+  "format": 0.15
+ },
+ "overall": {
+  "n": 160,
+  "say_acc": [
+   0.90625,
+   160
+  ],
+  "mood_acc": [
+   0.9619047619047619,
+   105
+  ],
+  "mood_best": [
+   0.8,
+   105
+  ],
+  "mood_acc_all": [
+   0.8632478632478633,
+   117
+  ],
+  "availability_violation": [
+   0.0,
+   105
+  ],
+  "forbidden_event": [
+   0.009523809523809525,
+   105
+  ],
+  "overuse": [
+   0.0380952380952381,
+   105
+  ],
+  "format_error": [
+   0.18125,
+   160
+  ],
+  "display_leak": [
+   0.09375,
+   160
+  ],
+  "self_gate": [
+   0.05555555555555555,
+   90
+  ],
+  "expression": [
+   0.87615125,
+   160
+  ]
+ },
+ "confusion": {
+  "text": {
+   "text": 43,
+   "speech": 0,
+   "speech_summary": 0
+  },
+  "speech": {
+   "text": 4,
+   "speech": 88,
+   "speech_summary": 1
+  },
+  "speech_summary": {
+   "text": 8,
+   "speech": 2,
+   "speech_summary": 14
+  }
+ },
+ "by_lang": {
+  "en": {
+   "n": 83,
+   "say_acc": [
+    0.891566265060241,
+    83
+   ],
+   "mood_acc": [
+    0.9615384615384616,
+    52
+   ],
+   "mood_best": [
+    0.8076923076923077,
+    52
+   ],
+   "mood_acc_all": [
+    0.8620689655172413,
+    58
+   ],
+   "availability_violation": [
+    0.0,
+    52
+   ],
+   "forbidden_event": [
+    0.019230769230769232,
+    52
+   ],
+   "overuse": [
+    0.019230769230769232,
+    52
+   ],
+   "format_error": [
+    0.18072289156626506,
+    83
+   ],
+   "display_leak": [
+    0.0963855421686747,
+    83
+   ],
+   "self_gate": [
+    0.044444444444444446,
+    45
+   ],
+   "expression": [
+    0.8750277108433736,
+    83
+   ]
+  },
+  "pt": {
+   "n": 77,
+   "say_acc": [
+    0.922077922077922,
+    77
+   ],
+   "mood_acc": [
+    0.9622641509433962,
+    53
+   ],
+   "mood_best": [
+    0.7924528301886793,
+    53
+   ],
+   "mood_acc_all": [
+    0.864406779661017,
+    59
+   ],
+   "availability_violation": [
+    0.0,
+    53
+   ],
+   "forbidden_event": [
+    0.0,
+    53
+   ],
+   "overuse": [
+    0.05660377358490566,
+    53
+   ],
+   "format_error": [
+    0.18181818181818182,
+    77
+   ],
+   "display_leak": [
+    0.09090909090909091,
+    77
+   ],
+   "self_gate": [
+    0.06666666666666667,
+    45
+   ],
+   "expression": [
+    0.8773623376623376,
+    77
+   ]
+  }
+ },
+ "by_group": {
+  "content": {
+   "n": 32,
+   "say_acc": [
+    0.71875,
+    32
+   ],
+   "mood_acc": [
+    1.0,
+    20
+   ],
+   "mood_best": [
+    1.0,
+    20
+   ],
+   "mood_acc_all": [
+    0.7142857142857143,
+    28
+   ],
+   "availability_violation": [
+    0.0,
+    20
+   ],
+   "forbidden_event": [
+    0.0,
+    20
+   ],
+   "overuse": [
+    0.0,
+    20
+   ],
+   "format_error": [
+    0.625,
+    32
+   ],
+   "display_leak": [
+    0.3125,
+    32
+   ],
+   "self_gate": [
+    0.16666666666666666,
+    6
+   ],
+   "expression": [
+    0.669746875,
+    32
+   ]
+  },
+  "emo": {
+   "n": 75,
+   "say_acc": [
+    0.9733333333333334,
+    75
+   ],
+   "mood_acc": [
+    0.9365079365079365,
+    63
+   ],
+   "mood_best": [
+    0.7619047619047619,
+    63
+   ],
+   "mood_acc_all": [
+    0.9076923076923077,
+    65
+   ],
+   "availability_violation": [
+    0.0,
+    63
+   ],
+   "forbidden_event": [
+    0.015873015873015872,
+    63
+   ],
+   "overuse": [
+    0.06349206349206349,
+    63
+   ],
+   "format_error": [
+    0.05333333333333334,
+    75
+   ],
+   "display_leak": [
+    0.04,
+    75
+   ],
+   "self_gate": [
+    0.047619047619047616,
+    63
+   ],
+   "expression": [
+    0.9289999999999999,
+    75
+   ]
+  },
+  "gate": {
+   "n": 31,
+   "say_acc": [
+    0.967741935483871,
+    31
+   ],
+   "mood_acc": [
+    1.0,
+    11
+   ],
+   "mood_best": [
+    0.8181818181818182,
+    11
+   ],
+   "mood_acc_all": [
+    1.0,
+    11
+   ],
+   "availability_violation": [
+    0.0,
+    11
+   ],
+   "forbidden_event": [
+    0.0,
+    11
+   ],
+   "overuse": [
+    0.0,
+    11
+   ],
+   "format_error": [
+    0.06451612903225806,
+    31
+   ],
+   "display_leak": [
+    0.03225806451612903,
+    31
+   ],
+   "self_gate": [
+    0.0,
+    10
+   ],
+   "expression": [
+    0.9653967741935483,
+    31
+   ]
+  },
+  "hard": {
+   "n": 22,
+   "say_acc": [
+    0.8636363636363636,
+    22
+   ],
+   "mood_acc": [
+    1.0,
+    11
+   ],
+   "mood_best": [
+    0.6363636363636364,
+    11
+   ],
+   "mood_acc_all": [
+    0.8461538461538461,
+    13
+   ],
+   "availability_violation": [
+    0.0,
+    11
+   ],
+   "forbidden_event": [
+    0.0,
+    11
+   ],
+   "overuse": [
+    0.0,
+    11
+   ],
+   "format_error": [
+    0.13636363636363635,
+    22
+   ],
+   "display_leak": [
+    0.045454545454545456,
+    22
+   ],
+   "self_gate": [
+    0.09090909090909091,
+    11
+   ],
+   "expression": [
+    0.8704545454545454,
+    22
+   ]
+  }
+ },
+ "by_gate_branch": {
+  "desktop:absent": {
+   "n": 2,
+   "say_acc": [
+    1.0,
+    2
+   ],
+   "mood_acc": [
+    null,
+    0
+   ],
+   "mood_best": [
+    null,
+    0
+   ],
+   "mood_acc_all": [
+    null,
+    0
+   ],
+   "availability_violation": [
+    null,
+    0
+   ],
+   "forbidden_event": [
+    null,
+    0
+   ],
+   "overuse": [
+    null,
+    0
+   ],
+   "format_error": [
+    0.0,
+    2
+   ],
+   "display_leak": [
+    0.0,
+    2
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    1.0,
+    2
+   ]
+  },
+  "desktop:asked_for_text": {
+   "n": 6,
+   "say_acc": [
+    1.0,
+    6
+   ],
+   "mood_acc": [
+    null,
+    0
+   ],
+   "mood_best": [
+    null,
+    0
+   ],
+   "mood_acc_all": [
+    null,
+    0
+   ],
+   "availability_violation": [
+    null,
+    0
+   ],
+   "forbidden_event": [
+    null,
+    0
+   ],
+   "overuse": [
+    null,
+    0
+   ],
+   "format_error": [
+    0.0,
+    6
+   ],
+   "display_leak": [
+    0.0,
+    6
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    1.0,
+    6
+   ]
+  },
+  "desktop:device_busy": {
+   "n": 4,
+   "say_acc": [
+    1.0,
+    4
+   ],
+   "mood_acc": [
+    null,
+    0
+   ],
+   "mood_best": [
+    null,
+    0
+   ],
+   "mood_acc_all": [
+    null,
+    0
+   ],
+   "availability_violation": [
+    null,
+    0
+   ],
+   "forbidden_event": [
+    null,
+    0
+   ],
+   "overuse": [
+    null,
+    0
+   ],
+   "format_error": [
+    0.0,
+    4
+   ],
+   "display_leak": [
+    0.0,
+    4
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    1.0,
+    4
+   ]
+  },
+  "desktop:dictated": {
+   "n": 93,
+   "say_acc": [
+    0.8602150537634409,
+    93
+   ],
+   "mood_acc": [
+    0.9512195121951219,
+    82
+   ],
+   "mood_best": [
+    0.8048780487804879,
+    82
+   ],
+   "mood_acc_all": [
+    0.8387096774193549,
+    93
+   ],
+   "availability_violation": [
+    0.0,
+    82
+   ],
+   "forbidden_event": [
+    0.012195121951219513,
+    82
+   ],
+   "overuse": [
+    0.04878048780487805,
+    82
+   ],
+   "format_error": [
+    0.24731182795698925,
+    93
+   ],
+   "display_leak": [
+    0.15053763440860216,
+    93
+   ],
+   "self_gate": [
+    0.058823529411764705,
+    68
+   ],
+   "expression": [
+    0.8204301075268817,
+    93
+   ]
+  },
+  "desktop:muted": {
+   "n": 4,
+   "say_acc": [
+    1.0,
+    4
+   ],
+   "mood_acc": [
+    null,
+    0
+   ],
+   "mood_best": [
+    null,
+    0
+   ],
+   "mood_acc_all": [
+    null,
+    0
+   ],
+   "availability_violation": [
+    null,
+    0
+   ],
+   "forbidden_event": [
+    null,
+    0
+   ],
+   "overuse": [
+    null,
+    0
+   ],
+   "format_error": [
+    0.0,
+    4
+   ],
+   "display_leak": [
+    0.0,
+    4
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    1.0,
+    4
+   ]
+  },
+  "desktop:typed": {
+   "n": 17,
+   "say_acc": [
+    1.0,
+    17
+   ],
+   "mood_acc": [
+    null,
+    0
+   ],
+   "mood_best": [
+    null,
+    0
+   ],
+   "mood_acc_all": [
+    null,
+    0
+   ],
+   "availability_violation": [
+    null,
+    0
+   ],
+   "forbidden_event": [
+    null,
+    0
+   ],
+   "overuse": [
+    null,
+    0
+   ],
+   "format_error": [
+    0.17647058823529413,
+    17
+   ],
+   "display_leak": [
+    0.0,
+    17
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    0.9518764705882352,
+    17
+   ]
+  },
+  "desktop:typed_asked_aloud": {
+   "n": 4,
+   "say_acc": [
+    0.75,
+    4
+   ],
+   "mood_acc": [
+    1.0,
+    3
+   ],
+   "mood_best": [
+    0.6666666666666666,
+    3
+   ],
+   "mood_acc_all": [
+    0.75,
+    4
+   ],
+   "availability_violation": [
+    0.0,
+    3
+   ],
+   "forbidden_event": [
+    0.0,
+    3
+   ],
+   "overuse": [
+    0.0,
+    3
+   ],
+   "format_error": [
+    0.25,
+    4
+   ],
+   "display_leak": [
+    0.0,
+    4
+   ],
+   "self_gate": [
+    0.3333333333333333,
+    3
+   ],
+   "expression": [
+    0.73125,
+    4
+   ]
+  },
+  "desktop:voice_mode_off": {
+   "n": 4,
+   "say_acc": [
+    1.0,
+    4
+   ],
+   "mood_acc": [
+    null,
+    0
+   ],
+   "mood_best": [
+    null,
+    0
+   ],
+   "mood_acc_all": [
+    null,
+    0
+   ],
+   "availability_violation": [
+    null,
+    0
+   ],
+   "forbidden_event": [
+    null,
+    0
+   ],
+   "overuse": [
+    null,
+    0
+   ],
+   "format_error": [
+    0.0,
+    4
+   ],
+   "display_leak": [
+    0.0,
+    4
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    1.0,
+    4
+   ]
+  },
+  "messaging:muted": {
+   "n": 2,
+   "say_acc": [
+    1.0,
+    2
+   ],
+   "mood_acc": [
+    null,
+    0
+   ],
+   "mood_best": [
+    null,
+    0
+   ],
+   "mood_acc_all": [
+    null,
+    0
+   ],
+   "availability_violation": [
+    null,
+    0
+   ],
+   "forbidden_event": [
+    null,
+    0
+   ],
+   "overuse": [
+    null,
+    0
+   ],
+   "format_error": [
+    0.5,
+    2
+   ],
+   "display_leak": [
+    0.0,
+    2
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    0.86365,
+    2
+   ]
+  },
+  "messaging:typed": {
+   "n": 4,
+   "say_acc": [
+    1.0,
+    4
+   ],
+   "mood_acc": [
+    null,
+    0
+   ],
+   "mood_best": [
+    null,
+    0
+   ],
+   "mood_acc_all": [
+    null,
+    0
+   ],
+   "availability_violation": [
+    null,
+    0
+   ],
+   "forbidden_event": [
+    null,
+    0
+   ],
+   "overuse": [
+    null,
+    0
+   ],
+   "format_error": [
+    0.0,
+    4
+   ],
+   "display_leak": [
+    0.0,
+    4
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    1.0,
+    4
+   ]
+  },
+  "messaging:typed_asked_for_voice": {
+   "n": 2,
+   "say_acc": [
+    1.0,
+    2
+   ],
+   "mood_acc": [
+    1.0,
+    2
+   ],
+   "mood_best": [
+    0.5,
+    2
+   ],
+   "mood_acc_all": [
+    1.0,
+    2
+   ],
+   "availability_violation": [
+    0.0,
+    2
+   ],
+   "forbidden_event": [
+    0.0,
+    2
+   ],
+   "overuse": [
+    0.0,
+    2
+   ],
+   "format_error": [
+    0.0,
+    2
+   ],
+   "display_leak": [
+    0.0,
+    2
+   ],
+   "self_gate": [
+    0.0,
+    2
+   ],
+   "expression": [
+    0.9625,
+    2
+   ]
+  },
+  "messaging:voice_note_in": {
+   "n": 18,
+   "say_acc": [
+    0.9444444444444444,
+    18
+   ],
+   "mood_acc": [
+    1.0,
+    18
+   ],
+   "mood_best": [
+    0.8333333333333334,
+    18
+   ],
+   "mood_acc_all": [
+    1.0,
+    18
+   ],
+   "availability_violation": [
+    0.0,
+    18
+   ],
+   "forbidden_event": [
+    0.0,
+    18
+   ],
+   "overuse": [
+    0.0,
+    18
+   ],
+   "format_error": [
+    0.05555555555555555,
+    18
+   ],
+   "display_leak": [
+    0.05555555555555555,
+    18
+   ],
+   "self_gate": [
+    0.0,
+    17
+   ],
+   "expression": [
+    0.9513888888888888,
+    18
+   ]
+  }
+ },
+ "by_emotion": {
+  "apology": {
+   "n": 4,
+   "say_acc": [
+    1.0,
+    4
+   ],
+   "mood_acc": [
+    0.5,
+    4
+   ],
+   "mood_best": [
+    0.25,
+    4
+   ],
+   "mood_acc_all": [
+    0.5,
+    4
+   ],
+   "availability_violation": [
+    0.0,
+    4
+   ],
+   "forbidden_event": [
+    0.0,
+    4
+   ],
+   "overuse": [
+    0.0,
+    4
+   ],
+   "format_error": [
+    0.0,
+    4
+   ],
+   "display_leak": [
+    0.0,
+    4
+   ],
+   "self_gate": [
+    0.0,
+    4
+   ],
+   "expression": [
+    0.83125,
+    4
+   ]
+  },
+  "bad_news": {
+   "n": 7,
+   "say_acc": [
+    1.0,
+    7
+   ],
+   "mood_acc": [
+    0.8333333333333334,
+    6
+   ],
+   "mood_best": [
+    0.8333333333333334,
+    6
+   ],
+   "mood_acc_all": [
+    0.8333333333333334,
+    6
+   ],
+   "availability_violation": [
+    0.0,
+    6
+   ],
+   "forbidden_event": [
+    0.0,
+    6
+   ],
+   "overuse": [
+    0.3333333333333333,
+    6
+   ],
+   "format_error": [
+    0.0,
+    7
+   ],
+   "display_leak": [
+    0.0,
+    7
+   ],
+   "self_gate": [
+    0.16666666666666666,
+    6
+   ],
+   "expression": [
+    0.9071428571428571,
+    7
+   ]
+  },
+  "condolence": {
+   "n": 8,
+   "say_acc": [
+    1.0,
+    8
+   ],
+   "mood_acc": [
+    1.0,
+    7
+   ],
+   "mood_best": [
+    0.8571428571428571,
+    7
+   ],
+   "mood_acc_all": [
+    1.0,
+    7
+   ],
+   "availability_violation": [
+    0.0,
+    7
+   ],
+   "forbidden_event": [
+    0.14285714285714285,
+    7
+   ],
+   "overuse": [
+    0.14285714285714285,
+    7
+   ],
+   "format_error": [
+    0.0,
+    8
+   ],
+   "display_leak": [
+    0.0,
+    8
+   ],
+   "self_gate": [
+    0.0,
+    7
+   ],
+   "expression": [
+    0.965625,
+    8
+   ]
+  },
+  "crisis": {
+   "n": 2,
+   "say_acc": [
+    0.5,
+    2
+   ],
+   "mood_acc": [
+    1.0,
+    1
+   ],
+   "mood_best": [
+    1.0,
+    1
+   ],
+   "mood_acc_all": [
+    0.5,
+    2
+   ],
+   "availability_violation": [
+    0.0,
+    1
+   ],
+   "forbidden_event": [
+    0.0,
+    1
+   ],
+   "overuse": [
+    0.0,
+    1
+   ],
+   "format_error": [
+    0.5,
+    2
+   ],
+   "display_leak": [
+    0.0,
+    2
+   ],
+   "self_gate": [
+    0.0,
+    1
+   ],
+   "expression": [
+    0.5,
+    2
+   ]
+  },
+  "frustration": {
+   "n": 6,
+   "say_acc": [
+    1.0,
+    6
+   ],
+   "mood_acc": [
+    1.0,
+    5
+   ],
+   "mood_best": [
+    1.0,
+    5
+   ],
+   "mood_acc_all": [
+    1.0,
+    5
+   ],
+   "availability_violation": [
+    0.0,
+    5
+   ],
+   "forbidden_event": [
+    0.0,
+    5
+   ],
+   "overuse": [
+    0.2,
+    5
+   ],
+   "format_error": [
+    0.0,
+    6
+   ],
+   "display_leak": [
+    0.0,
+    6
+   ],
+   "self_gate": [
+    0.0,
+    5
+   ],
+   "expression": [
+    0.9666666666666667,
+    6
+   ]
+  },
+  "good_news": {
+   "n": 10,
+   "say_acc": [
+    0.9,
+    10
+   ],
+   "mood_acc": [
+    1.0,
+    8
+   ],
+   "mood_best": [
+    0.875,
+    8
+   ],
+   "mood_acc_all": [
+    0.8888888888888888,
+    9
+   ],
+   "availability_violation": [
+    0.0,
+    8
+   ],
+   "forbidden_event": [
+    0.0,
+    8
+   ],
+   "overuse": [
+    0.0,
+    8
+   ],
+   "format_error": [
+    0.1,
+    10
+   ],
+   "display_leak": [
+    0.0,
+    10
+   ],
+   "self_gate": [
+    0.0,
+    8
+   ],
+   "expression": [
+    0.8825,
+    10
+   ]
+  },
+  "goodbye": {
+   "n": 6,
+   "say_acc": [
+    1.0,
+    6
+   ],
+   "mood_acc": [
+    1.0,
+    5
+   ],
+   "mood_best": [
+    0.4,
+    5
+   ],
+   "mood_acc_all": [
+    1.0,
+    5
+   ],
+   "availability_violation": [
+    0.0,
+    5
+   ],
+   "forbidden_event": [
+    0.0,
+    5
+   ],
+   "overuse": [
+    0.0,
+    5
+   ],
+   "format_error": [
+    0.0,
+    6
+   ],
+   "display_leak": [
+    0.0,
+    6
+   ],
+   "self_gate": [
+    0.0,
+    5
+   ],
+   "expression": [
+    0.9625,
+    6
+   ]
+  },
+  "greeting": {
+   "n": 10,
+   "say_acc": [
+    1.0,
+    10
+   ],
+   "mood_acc": [
+    1.0,
+    7
+   ],
+   "mood_best": [
+    0.7142857142857143,
+    7
+   ],
+   "mood_acc_all": [
+    1.0,
+    7
+   ],
+   "availability_violation": [
+    0.0,
+    7
+   ],
+   "forbidden_event": [
+    0.0,
+    7
+   ],
+   "overuse": [
+    0.0,
+    7
+   ],
+   "format_error": [
+    0.0,
+    10
+   ],
+   "display_leak": [
+    0.0,
+    10
+   ],
+   "self_gate": [
+    0.0,
+    7
+   ],
+   "expression": [
+    0.975,
+    10
+   ]
+  },
+  "info": {
+   "n": 71,
+   "say_acc": [
+    0.8450704225352113,
+    71
+   ],
+   "mood_acc": [
+    1.0,
+    35
+   ],
+   "mood_best": [
+    0.8857142857142857,
+    35
+   ],
+   "mood_acc_all": [
+    0.7954545454545454,
+    44
+   ],
+   "availability_violation": [
+    0.0,
+    35
+   ],
+   "forbidden_event": [
+    0.0,
+    35
+   ],
+   "overuse": [
+    0.0,
+    35
+   ],
+   "format_error": [
+    0.323943661971831,
+    71
+   ],
+   "display_leak": [
+    0.15492957746478872,
+    71
+   ],
+   "self_gate": [
+    0.09523809523809523,
+    21
+   ],
+   "expression": [
+    0.821256338028169,
+    71
+   ]
+  },
+  "joke": {
+   "n": 9,
+   "say_acc": [
+    1.0,
+    9
+   ],
+   "mood_acc": [
+    1.0,
+    8
+   ],
+   "mood_best": [
+    1.0,
+    8
+   ],
+   "mood_acc_all": [
+    1.0,
+    8
+   ],
+   "availability_violation": [
+    0.0,
+    8
+   ],
+   "forbidden_event": [
+    0.0,
+    8
+   ],
+   "overuse": [
+    0.0,
+    8
+   ],
+   "format_error": [
+    0.0,
+    9
+   ],
+   "display_leak": [
+    0.0,
+    9
+   ],
+   "self_gate": [
+    0.0,
+    8
+   ],
+   "expression": [
+    1.0,
+    9
+   ]
+  },
+  "safety_refusal": {
+   "n": 6,
+   "say_acc": [
+    0.8333333333333334,
+    6
+   ],
+   "mood_acc": [
+    0.75,
+    4
+   ],
+   "mood_best": [
+    0.25,
+    4
+   ],
+   "mood_acc_all": [
+    0.6,
+    5
+   ],
+   "availability_violation": [
+    0.0,
+    4
+   ],
+   "forbidden_event": [
+    0.0,
+    4
+   ],
+   "overuse": [
+    0.0,
+    4
+   ],
+   "format_error": [
+    0.3333333333333333,
+    6
+   ],
+   "display_leak": [
+    0.3333333333333333,
+    6
+   ],
+   "self_gate": [
+    0.5,
+    4
+   ],
+   "expression": [
+    0.7416666666666667,
+    6
+   ]
+  },
+  "small_talk": {
+   "n": 15,
+   "say_acc": [
+    0.9333333333333333,
+    15
+   ],
+   "mood_acc": [
+    1.0,
+    10
+   ],
+   "mood_best": [
+    0.7,
+    10
+   ],
+   "mood_acc_all": [
+    1.0,
+    10
+   ],
+   "availability_violation": [
+    0.0,
+    10
+   ],
+   "forbidden_event": [
+    0.0,
+    10
+   ],
+   "overuse": [
+    0.0,
+    10
+   ],
+   "format_error": [
+    0.13333333333333333,
+    15
+   ],
+   "display_leak": [
+    0.13333333333333333,
+    15
+   ],
+   "self_gate": [
+    0.0,
+    9
+   ],
+   "expression": [
+    0.925,
+    15
+   ]
+  },
+  "tired_night": {
+   "n": 6,
+   "say_acc": [
+    1.0,
+    6
+   ],
+   "mood_acc": [
+    1.0,
+    5
+   ],
+   "mood_best": [
+    1.0,
+    5
+   ],
+   "mood_acc_all": [
+    1.0,
+    5
+   ],
+   "availability_violation": [
+    0.0,
+    5
+   ],
+   "forbidden_event": [
+    0.0,
+    5
+   ],
+   "overuse": [
+    0.0,
+    5
+   ],
+   "format_error": [
+    0.0,
+    6
+   ],
+   "display_leak": [
+    0.0,
+    6
+   ],
+   "self_gate": [
+    0.0,
+    5
+   ],
+   "expression": [
+    1.0,
+    6
+   ]
+  }
+ },
+ "by_content": {
+  "code": {
+   "n": 7,
+   "say_acc": [
+    0.8571428571428571,
+    7
+   ],
+   "mood_acc": [
+    1.0,
+    5
+   ],
+   "mood_best": [
+    1.0,
+    5
+   ],
+   "mood_acc_all": [
+    1.0,
+    5
+   ],
+   "availability_violation": [
+    0.0,
+    5
+   ],
+   "forbidden_event": [
+    0.0,
+    5
+   ],
+   "overuse": [
+    0.0,
+    5
+   ],
+   "format_error": [
+    0.5714285714285714,
+    7
+   ],
+   "display_leak": [
+    0.42857142857142855,
+    7
+   ],
+   "self_gate": [
+    0.0,
+    1
+   ],
+   "expression": [
+    0.8396142857142858,
+    7
+   ]
+  },
+  "list": {
+   "n": 4,
+   "say_acc": [
+    1.0,
+    4
+   ],
+   "mood_acc": [
+    1.0,
+    4
+   ],
+   "mood_best": [
+    0.5,
+    4
+   ],
+   "mood_acc_all": [
+    1.0,
+    4
+   ],
+   "availability_violation": [
+    0.0,
+    4
+   ],
+   "forbidden_event": [
+    0.0,
+    4
+   ],
+   "overuse": [
+    0.0,
+    4
+   ],
+   "format_error": [
+    0.0,
+    4
+   ],
+   "display_leak": [
+    0.0,
+    4
+   ],
+   "self_gate": [
+    0.0,
+    2
+   ],
+   "expression": [
+    0.9625,
+    4
+   ]
+  },
+  "list3": {
+   "n": 3,
+   "say_acc": [
+    1.0,
+    3
+   ],
+   "mood_acc": [
+    1.0,
+    3
+   ],
+   "mood_best": [
+    1.0,
+    3
+   ],
+   "mood_acc_all": [
+    1.0,
+    3
+   ],
+   "availability_violation": [
+    0.0,
+    3
+   ],
+   "forbidden_event": [
+    0.0,
+    3
+   ],
+   "overuse": [
+    0.0,
+    3
+   ],
+   "format_error": [
+    0.3333333333333333,
+    3
+   ],
+   "display_leak": [
+    0.3333333333333333,
+    3
+   ],
+   "self_gate": [
+    0.0,
+    3
+   ],
+   "expression": [
+    0.9500000000000001,
+    3
+   ]
+  },
+  "long": {
+   "n": 6,
+   "say_acc": [
+    0.3333333333333333,
+    6
+   ],
+   "mood_acc": [
+    null,
+    0
+   ],
+   "mood_best": [
+    null,
+    0
+   ],
+   "mood_acc_all": [
+    0.0,
+    4
+   ],
+   "availability_violation": [
+    null,
+    0
+   ],
+   "forbidden_event": [
+    null,
+    0
+   ],
+   "overuse": [
+    null,
+    0
+   ],
+   "format_error": [
+    1.0,
+    6
+   ],
+   "display_leak": [
+    0.0,
+    6
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    0.2424333333333333,
+    6
+   ]
+  },
+  "none": {
+   "n": 121,
+   "say_acc": [
+    0.9669421487603306,
+    121
+   ],
+   "mood_acc": [
+    0.975,
+    80
+   ],
+   "mood_best": [
+    0.7875,
+    80
+   ],
+   "mood_acc_all": [
+    0.9397590361445783,
+    83
+   ],
+   "availability_violation": [
+    0.0,
+    80
+   ],
+   "forbidden_event": [
+    0.0125,
+    80
+   ],
+   "overuse": [
+    0.05,
+    80
+   ],
+   "format_error": [
+    0.06611570247933884,
+    121
+   ],
+   "display_leak": [
+    0.04132231404958678,
+    121
+   ],
+   "self_gate": [
+    0.0379746835443038,
+    79
+   ],
+   "expression": [
+    0.9405148760330578,
+    121
+   ]
+  },
+  "numbers": {
+   "n": 5,
+   "say_acc": [
+    0.4,
+    5
+   ],
+   "mood_acc": [
+    1.0,
+    2
+   ],
+   "mood_best": [
+    1.0,
+    2
+   ],
+   "mood_acc_all": [
+    0.4,
+    5
+   ],
+   "availability_violation": [
+    0.0,
+    2
+   ],
+   "forbidden_event": [
+    0.0,
+    2
+   ],
+   "overuse": [
+    0.0,
+    2
+   ],
+   "format_error": [
+    0.6,
+    5
+   ],
+   "display_leak": [
+    0.0,
+    5
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    0.4,
+    5
+   ]
+  },
+  "path": {
+   "n": 2,
+   "say_acc": [
+    1.0,
+    2
+   ],
+   "mood_acc": [
+    1.0,
+    2
+   ],
+   "mood_best": [
+    1.0,
+    2
+   ],
+   "mood_acc_all": [
+    1.0,
+    2
+   ],
+   "availability_violation": [
+    0.0,
+    2
+   ],
+   "forbidden_event": [
+    0.0,
+    2
+   ],
+   "overuse": [
+    0.0,
+    2
+   ],
+   "format_error": [
+    1.0,
+    2
+   ],
+   "display_leak": [
+    1.0,
+    2
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    0.85,
+    2
+   ]
+  },
+  "short_numbers": {
+   "n": 6,
+   "say_acc": [
+    0.8333333333333334,
+    6
+   ],
+   "mood_acc": [
+    0.5,
+    4
+   ],
+   "mood_best": [
+    0.5,
+    4
+   ],
+   "mood_acc_all": [
+    0.4,
+    5
+   ],
+   "availability_violation": [
+    0.0,
+    4
+   ],
+   "forbidden_event": [
+    0.0,
+    4
+   ],
+   "overuse": [
+    0.0,
+    4
+   ],
+   "format_error": [
+    0.16666666666666666,
+    6
+   ],
+   "display_leak": [
+    0.16666666666666666,
+    6
+   ],
+   "self_gate": [
+    0.5,
+    4
+   ],
+   "expression": [
+    0.75,
+    6
+   ]
+  },
+  "table": {
+   "n": 2,
+   "say_acc": [
+    0.5,
+    2
+   ],
+   "mood_acc": [
+    1.0,
+    1
+   ],
+   "mood_best": [
+    1.0,
+    1
+   ],
+   "mood_acc_all": [
+    0.5,
+    2
+   ],
+   "availability_violation": [
+    0.0,
+    1
+   ],
+   "forbidden_event": [
+    0.0,
+    1
+   ],
+   "overuse": [
+    0.0,
+    1
+   ],
+   "format_error": [
+    1.0,
+    2
+   ],
+   "display_leak": [
+    0.5,
+    2
+   ],
+   "self_gate": [
+    null,
+    0
+   ],
+   "expression": [
+    0.425,
+    2
+   ]
+  },
+  "url": {
+   "n": 4,
+   "say_acc": [
+    0.75,
+    4
+   ],
+   "mood_acc": [
+    1.0,
+    4
+   ],
+   "mood_best": [
+    1.0,
+    4
+   ],
+   "mood_acc_all": [
+    1.0,
+    4
+   ],
+   "availability_violation": [
+    0.0,
+    4
+   ],
+   "forbidden_event": [
+    0.0,
+    4
+   ],
+   "overuse": [
+    0.0,
+    4
+   ],
+   "format_error": [
+    0.5,
+    4
+   ],
+   "display_leak": [
+    0.5,
+    4
+   ],
+   "self_gate": [
+    0.0,
+    1
+   ],
+   "expression": [
+    0.825,
+    4
+   ]
+  }
+ },
+ "format_error_types": {
+  "empty_reply": 14,
+  "summary_missing": 9,
+  "unknown_control": 9,
+  "nothing_to_speak": 9,
+  "unknown_tag": 4,
+  "unbalanced_markup": 2,
+  "marker_lookalike": 1
+ },
+ "latency_ms_p50": 3954.8,
+ "per_case": [
+  {
+   "id": "en-gate-01",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 4382.2,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-02",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "desktop:typed",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1329.5,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-03",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "desktop:voice_mode_off",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2098.3,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-04",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "desktop:muted",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1797.6,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-05",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "desktop:device_busy",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 4935.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-06",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "desktop:absent",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5320.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-07",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3295.4,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-08",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "messaging:typed",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5138.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-09",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2851.9,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-10",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "greeting",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2515.2,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-11",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "messaging:typed",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2445.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-12",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "messaging:muted",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1645.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-13",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "desktop:typed",
+   "emotion": "greeting",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1186.0,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-14",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "desktop:voice_mode_off",
+   "emotion": "info",
+   "content": "short_numbers",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 550.8,
+   "say_ok": true
+  },
+  {
+   "id": "en-gate-15",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "desktop:dictated",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "summary_missing",
+    "unknown_control:⟨/summary⟩",
+    "nothing_to_speak"
+   ],
+   "display_leaks": [
+    "⟨",
+    "⟩"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.375,
+   "latency_ms": 9117.7,
+   "say_ok": false
+  },
+  {
+   "id": "en-gate-16",
+   "lang": "en",
+   "group": "gate",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<gasp>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": true,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 0.5
+   },
+   "expression": 0.9,
+   "latency_ms": 1968.6,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-01",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3349.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-02",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "desktop:typed",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 12418.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-03",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "desktop:voice_mode_off",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5526.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-04",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "desktop:muted",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1348.4,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-05",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "desktop:device_busy",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5727.9,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-06",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "desktop:absent",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2606.7,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-07",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5353.6,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-08",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "messaging:typed",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 4529.4,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-09",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3952.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-10",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "greeting",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 1931.0,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-11",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "messaging:typed",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1754.7,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-12",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "messaging:muted",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0
+   },
+   "expression": 0.7273,
+   "latency_ms": 4543.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-13",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "desktop:typed",
+   "emotion": "greeting",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1038.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-14",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "desktop:dictated",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 14432.5,
+   "say_ok": true
+  },
+  {
+   "id": "pt-gate-15",
+   "lang": "pt",
+   "group": "gate",
+   "gate_branch": "desktop:device_busy",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1232.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-01",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "code",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "summary_missing",
+    "unknown_control:⟨/summary⟩",
+    "nothing_to_speak"
+   ],
+   "display_leaks": [
+    "⟨",
+    "⟩"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 5315.5,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-02",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "code",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "summary_missing",
+    "unknown_control:⟨/summary⟩",
+    "nothing_to_speak"
+   ],
+   "display_leaks": [
+    "⟨",
+    "⟩"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 3954.8,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-03",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:typed",
+   "emotion": "info",
+   "content": "code",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5781.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-04",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "url",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "summary_missing",
+    "unknown_control:⟨/summary⟩",
+    "nothing_to_speak"
+   ],
+   "display_leaks": [
+    "⟨",
+    "⟩"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 2695.1,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-05",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "path",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "summary_missing",
+    "unknown_control:⟨/summary⟩",
+    "nothing_to_speak"
+   ],
+   "display_leaks": [
+    "⟨",
+    "⟩"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 2773.4,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-06",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "table",
+   "gold_say": "speech_summary",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 7926.0,
+   "say_ok": false
+  },
+  {
+   "id": "en-content-07",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "list",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 6503.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-08",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "list3",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2516.9,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-09",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "numbers",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 4344.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-10",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "numbers",
+   "gold_say": "speech_summary",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 4498.8,
+   "say_ok": false
+  },
+  {
+   "id": "en-content-11",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "short_numbers",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5944.0,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-12",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "long",
+   "gold_say": "speech_summary",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 6406.5,
+   "say_ok": false
+  },
+  {
+   "id": "en-content-13",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "long",
+   "gold_say": "speech_summary",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 10128.0,
+   "say_ok": false
+  },
+  {
+   "id": "en-content-14",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:typed",
+   "emotion": "info",
+   "content": "long",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0
+   },
+   "expression": 0.7273,
+   "latency_ms": 13384.3,
+   "say_ok": true
+  },
+  {
+   "id": "en-content-15",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "info",
+   "content": "url",
+   "gold_say": "speech_summary",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.6,
+   "latency_ms": 4317.8,
+   "say_ok": false
+  },
+  {
+   "id": "en-content-16",
+   "lang": "en",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "list3",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "unknown_tag:</br>"
+   ],
+   "display_leaks": [
+    "</br>"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 2696.3,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-01",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "code",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "summary_missing",
+    "unknown_control:⟨/summary⟩",
+    "nothing_to_speak"
+   ],
+   "display_leaks": [
+    "⟨",
+    "⟩"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 9677.6,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-02",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "code",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 9015.6,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-03",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:typed",
+   "emotion": "info",
+   "content": "code",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0
+   },
+   "expression": 0.7273,
+   "latency_ms": 5111.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-04",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "url",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5685.3,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-05",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "path",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "summary_missing",
+    "unknown_control:⟨/summary⟩",
+    "nothing_to_speak"
+   ],
+   "display_leaks": [
+    "⟨",
+    "⟩"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 10448.6,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-06",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "table",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "summary_missing",
+    "unknown_control:⟨/summary⟩",
+    "nothing_to_speak"
+   ],
+   "display_leaks": [
+    "⟨",
+    "⟩"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 4781.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-07",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "list",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 8408.3,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-08",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "list3",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2877.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-09",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "numbers",
+   "gold_say": "speech_summary",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 7048.2,
+   "say_ok": false
+  },
+  {
+   "id": "pt-content-10",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "numbers",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 6577.6,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-11",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "short_numbers",
+   "gold_say": "speech",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "marker_lookalike",
+    "unbalanced_markup"
+   ],
+   "display_leaks": [
+    "⟨"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 7416.8,
+   "say_ok": false
+  },
+  {
+   "id": "pt-content-12",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "long",
+   "gold_say": "speech_summary",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 6927.9,
+   "say_ok": false
+  },
+  {
+   "id": "pt-content-13",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "long",
+   "gold_say": "speech_summary",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 6754.1,
+   "say_ok": false
+  },
+  {
+   "id": "pt-content-14",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:typed",
+   "emotion": "info",
+   "content": "long",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0
+   },
+   "expression": 0.7273,
+   "latency_ms": 6091.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-15",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "info",
+   "content": "url",
+   "gold_say": "speech_summary",
+   "pred_say": "speech_summary",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "summary_missing",
+    "unknown_control:⟨/summary⟩",
+    "nothing_to_speak"
+   ],
+   "display_leaks": [
+    "⟨",
+    "⟩"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 6686.6,
+   "say_ok": true
+  },
+  {
+   "id": "pt-content-16",
+   "lang": "pt",
+   "group": "content",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "short_numbers",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [
+    "numbers"
+   ],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 10225.0,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-01",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "good_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<gasp>",
+    "<laugh>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2046.4,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-02",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "good_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<gasp>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 2666.9,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-03",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:typed",
+   "emotion": "good_news",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1365.5,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-04",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "good_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 7346.8,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-01",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "good_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<gasp>",
+    "<laugh>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 15529.3,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-02",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "good_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<gasp>",
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3935.4,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-03",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "good_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<gasp>",
+    "<laugh>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2660.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-04",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "good_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "tender",
+   "moods_used": [
+    "tender"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<gasp>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": true,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 0.5
+   },
+   "expression": 0.9,
+   "latency_ms": 2375.2,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-05",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "bad_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 4063.6,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-06",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "bad_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "tender",
+   "moods_used": [
+    "tender"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 4989.2,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-07",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "bad_news",
+   "content": "short_numbers",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [
+    "numbers"
+   ],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.0,
+    "events": 1.0
+   },
+   "expression": 0.75,
+   "latency_ms": 4476.1,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-08",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:typed",
+   "emotion": "bad_news",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3063.0,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-05",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "bad_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>",
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": true,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 0.0
+   },
+   "expression": 0.8,
+   "latency_ms": 3237.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-06",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "bad_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>",
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": true,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 0.0
+   },
+   "expression": 0.8,
+   "latency_ms": 3782.5,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-07",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "bad_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5694.9,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-09",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "condolence",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "tender",
+   "moods_used": [
+    "tender"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5842.2,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-10",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "condolence",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>",
+    "<pause>"
+   ],
+   "forbidden_event": true,
+   "overuse": true,
+   "offlist_event": true,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 0.0
+   },
+   "expression": 0.8,
+   "latency_ms": 3326.0,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-11",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:typed",
+   "emotion": "condolence",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 4942.4,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-12",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "condolence",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5211.8,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-08",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "condolence",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "tender",
+   "moods_used": [
+    "tender"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3460.8,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-09",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "condolence",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3464.9,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-10",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "condolence",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "tender",
+   "moods_used": [
+    "tender"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3269.4,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-11",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "condolence",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 4155.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-13",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "joke",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<giggle>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1177.5,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-14",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "joke",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<laugh>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2766.3,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-15",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "joke",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<giggle>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 4354.3,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-16",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:typed",
+   "emotion": "joke",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 971.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-12",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "joke",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>",
+    "<giggle>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3797.3,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-13",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "joke",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<giggle>",
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3316.3,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-14",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "joke",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<laugh>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 7717.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-15",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "joke",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2461.6,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-17",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "frustration",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5572.1,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-18",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "frustration",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3640.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-19",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:typed",
+   "emotion": "frustration",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2168.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-16",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "frustration",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3958.6,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-17",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "frustration",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>",
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": true,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 0.0
+   },
+   "expression": 0.8,
+   "latency_ms": 2943.8,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-18",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "frustration",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3460.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-20",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "tired_night",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3253.1,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-21",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "tired_night",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1875.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-22",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "tired_night",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2632.0,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-19",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "tired_night",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3633.4,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-20",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "tired_night",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3424.8,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-21",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:typed",
+   "emotion": "tired_night",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2076.2,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-23",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 2300.3,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-24",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<gasp>",
+    "<laugh>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": true,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 0.5
+   },
+   "expression": 0.9,
+   "latency_ms": 1616.4,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-25",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "unknown_tag:</br>"
+   ],
+   "display_leaks": [
+    "</br>"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 3070.8,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-26",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<giggle>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5366.9,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-22",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1712.4,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-23",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>",
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 2428.4,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-24",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<giggle>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3698.7,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-25",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:typed",
+   "emotion": "small_talk",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2511.1,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-27",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "greeting",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": true,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 0.5
+   },
+   "expression": 0.9,
+   "latency_ms": 6050.4,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-28",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "greeting",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 10549.1,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-29",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:voice_mode_off",
+   "emotion": "greeting",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1542.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-26",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "greeting",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2307.4,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-27",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "greeting",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 2008.5,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-28",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "greeting",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2103.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-30",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "goodbye",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 1533.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-31",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "goodbye",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "tender",
+   "moods_used": [
+    "tender"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 2365.8,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-32",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "goodbye",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2798.9,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-29",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "goodbye",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1467.9,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-30",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "goodbye",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "tender",
+   "moods_used": [
+    "tender"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 3921.4,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-31",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:typed",
+   "emotion": "goodbye",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 7362.3,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-33",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "apology",
+   "content": "short_numbers",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.0,
+    "events": 1.0
+   },
+   "expression": 0.75,
+   "latency_ms": 3547.2,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-34",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "apology",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<sigh>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": true,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 0.5
+   },
+   "expression": 0.9,
+   "latency_ms": 3270.6,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-32",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "apology",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.0,
+    "events": 1.0
+   },
+   "expression": 0.75,
+   "latency_ms": 3197.0,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-33",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "apology",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "serious",
+   "moods_used": [
+    "serious"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 4425.6,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-35",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "safety_refusal",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 7023.8,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-36",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "safety_refusal",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "unknown_tag:</br>"
+   ],
+   "display_leaks": [
+    "</br>"
+   ],
+   "self_gate": [
+    "long"
+   ],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 4287.0,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-37",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:typed",
+   "emotion": "safety_refusal",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 7700.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-34",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "safety_refusal",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "unbalanced_markup"
+   ],
+   "display_leaks": [
+    "⟨"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 9603.1,
+   "say_ok": false
+  },
+  {
+   "id": "pt-emo-35",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "safety_refusal",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [
+    "long"
+   ],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.0,
+    "events": 1.0
+   },
+   "expression": 0.75,
+   "latency_ms": 6166.5,
+   "say_ok": true
+  },
+  {
+   "id": "pt-emo-36",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "messaging:voice_note_in",
+   "emotion": "safety_refusal",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 20321.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-emo-38",
+   "lang": "en",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "crisis",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 8043.4,
+   "say_ok": false
+  },
+  {
+   "id": "pt-emo-37",
+   "lang": "pt",
+   "group": "emo",
+   "gate_branch": "desktop:dictated",
+   "emotion": "crisis",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 7358.4,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-01",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:typed_asked_aloud",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1607.1,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-02",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:typed_asked_aloud",
+   "emotion": "good_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 6505.0,
+   "say_ok": false
+  },
+  {
+   "id": "en-hard-03",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:muted",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2431.8,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-04",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:device_busy",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 4402.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-05",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:asked_for_text",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2627.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-06",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:asked_for_text",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 7755.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-07",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3231.3,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-08",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "list",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 4602.2,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-09",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "messaging:typed_asked_for_voice",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 28760.2,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-10",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:asked_for_text",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1570.2,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-11",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:asked_for_text",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 8045.7,
+   "say_ok": true
+  },
+  {
+   "id": "en-hard-12",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 3368.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-hard-01",
+   "lang": "pt",
+   "group": "hard",
+   "gate_branch": "desktop:typed_asked_aloud",
+   "emotion": "good_news",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<giggle>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 1316.7,
+   "say_ok": true
+  },
+  {
+   "id": "pt-hard-02",
+   "lang": "pt",
+   "group": "hard",
+   "gate_branch": "desktop:typed_asked_aloud",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [
+    "long"
+   ],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 14593.3,
+   "say_ok": true
+  },
+  {
+   "id": "pt-hard-03",
+   "lang": "pt",
+   "group": "hard",
+   "gate_branch": "desktop:muted",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 4606.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-hard-04",
+   "lang": "pt",
+   "group": "hard",
+   "gate_branch": "desktop:asked_for_text",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 6858.2,
+   "say_ok": true
+  },
+  {
+   "id": "pt-hard-05",
+   "lang": "pt",
+   "group": "hard",
+   "gate_branch": "desktop:asked_for_text",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "text",
+   "pred_say": "text",
+   "gold_speaks": false,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 5139.8,
+   "say_ok": true
+  },
+  {
+   "id": "pt-hard-06",
+   "lang": "pt",
+   "group": "hard",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "unknown_tag:</say>"
+   ],
+   "display_leaks": [
+    "</say>"
+   ],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 0.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.85,
+   "latency_ms": 4091.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-hard-07",
+   "lang": "pt",
+   "group": "hard",
+   "gate_branch": "messaging:typed_asked_for_voice",
+   "emotion": "joke",
+   "content": "none",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "joy",
+   "moods_used": [
+    "joy"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<pause>",
+    "<giggle>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 1.0,
+   "latency_ms": 2699.0,
+   "say_ok": true
+  },
+  {
+   "id": "pt-hard-08",
+   "lang": "pt",
+   "group": "hard",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "list",
+   "gold_say": "speech",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "calm",
+   "moods_used": [
+    "calm"
+   ],
+   "mood_ok": true,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 1.0,
+    "format": 1.0,
+    "mood": 0.7,
+    "events": 1.0
+   },
+   "expression": 0.925,
+   "latency_ms": 5471.1,
+   "say_ok": true
+  },
+  {
+   "id": "pt-hard-09",
+   "lang": "pt",
+   "group": "hard",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "numbers",
+   "gold_say": "speech_summary",
+   "pred_say": "text",
+   "gold_speaks": true,
+   "spoke": false,
+   "mood": null,
+   "moods_used": [],
+   "mood_ok": false,
+   "mood_best": false,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [
+    "empty_reply"
+   ],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 0.0,
+    "mood": 0.0,
+    "events": 0.0
+   },
+   "expression": 0.0,
+   "latency_ms": 23026.6,
+   "say_ok": false
+  },
+  {
+   "id": "en-hard-13",
+   "lang": "en",
+   "group": "hard",
+   "gate_branch": "desktop:dictated",
+   "emotion": "info",
+   "content": "code",
+   "gold_say": "speech_summary",
+   "pred_say": "speech",
+   "gold_speaks": true,
+   "spoke": true,
+   "mood": "neutral",
+   "moods_used": [
+    "neutral"
+   ],
+   "mood_ok": true,
+   "mood_best": true,
+   "availability_violation": false,
+   "forbidden_mood": false,
+   "events": [
+    "<um>"
+   ],
+   "forbidden_event": false,
+   "overuse": false,
+   "offlist_event": false,
+   "format_errors": [],
+   "display_leaks": [],
+   "self_gate": [],
+   "components": {
+    "say": 0.0,
+    "format": 1.0,
+    "mood": 1.0,
+    "events": 1.0
+   },
+   "expression": 0.6,
+   "latency_ms": 12052.0,
+   "say_ok": false
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{"id": "en-gate-01", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-02", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-03", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-04", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-05", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-06", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-07", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-08", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-09", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-10", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-11", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-12", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-13", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-14", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-15", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-gate-16", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-01", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-02", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-03", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-04", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-05", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-06", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-07", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-08", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-09", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-10", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-11", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-12", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-13", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-14", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-gate-15", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-01", "model": "always_text", "latency_ms": 0, "raw": "```ts\nfunction debounce<T extends (...a: any[]) => void>(fn: T, ms: number) {\n  let t: ReturnType<typeof setTimeout>;\n  return (...a: Parameters<T>) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };\n}\n```\nCall it as `debounce<() => void>(save, 300)` or with a `Map<string, number>`.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-02", "model": "always_text", "latency_ms": 0, "raw": "```ts\nfunction debounce<T extends (...a: any[]) => void>(fn: T, ms: number) {\n  let t: ReturnType<typeof setTimeout>;\n  return (...a: Parameters<T>) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };\n}\n```\nCall it as `debounce<() => void>(save, 300)` or with a `Map<string, number>`.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-03", "model": "always_text", "latency_ms": 0, "raw": "```ts\nfunction debounce<T extends (...a: any[]) => void>(fn: T, ms: number) {\n  let t: ReturnType<typeof setTimeout>;\n  return (...a: Parameters<T>) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };\n}\n```\nCall it as `debounce<() => void>(save, 300)` or with a `Map<string, number>`.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-04", "model": "always_text", "latency_ms": 0, "raw": "Here it is: https://www.mozilla.org/firefox/new/", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-05", "model": "always_text", "latency_ms": 0, "raw": "It is `/etc/hosts`. Open it with `sudo nano /etc/hosts`, or browse to ~/Library/Fonts in Finder.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-06", "model": "always_text", "latency_ms": 0, "raw": "| item | a | b |\n|---|---|---|\n| one | 1 | 2 |\n| two | 3 | 4 |\n| three | 5 | 6 |", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-07", "model": "always_text", "latency_ms": 0, "raw": "1. Item 1\n2. Item 2\n3. Item 3\n4. Item 4\n5. Item 5\n6. Item 6\n7. Item 7\n8. Item 8\n9. Item 9\n10. Item 10", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-08", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-09", "model": "always_text", "latency_ms": 0, "raw": "5 km = 3.11 mi\n10 km = 6.21 mi\n21.1 km = 13.11 mi\n42.2 km = 26.22 mi\nTotal: 48.65 mi over 78.3 km", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-10", "model": "always_text", "latency_ms": 0, "raw": "5 km = 3.11 mi\n10 km = 6.21 mi\n21.1 km = 13.11 mi\n42.2 km = 26.22 mi\nTotal: 48.65 mi over 78.3 km", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-11", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-12", "model": "always_text", "latency_ms": 0, "raw": "This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-13", "model": "always_text", "latency_ms": 0, "raw": "This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-14", "model": "always_text", "latency_ms": 0, "raw": "This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-15", "model": "always_text", "latency_ms": 0, "raw": "Here it is: https://www.mozilla.org/firefox/new/", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-content-16", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-01", "model": "always_text", "latency_ms": 0, "raw": "```ts\nfunction debounce<T extends (...a: any[]) => void>(fn: T, ms: number) {\n  let t: ReturnType<typeof setTimeout>;\n  return (...a: Parameters<T>) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };\n}\n```\nCall it as `debounce<() => void>(save, 300)` or with a `Map<string, number>`.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-02", "model": "always_text", "latency_ms": 0, "raw": "```ts\nfunction debounce<T extends (...a: any[]) => void>(fn: T, ms: number) {\n  let t: ReturnType<typeof setTimeout>;\n  return (...a: Parameters<T>) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };\n}\n```\nCall it as `debounce<() => void>(save, 300)` or with a `Map<string, number>`.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-03", "model": "always_text", "latency_ms": 0, "raw": "```ts\nfunction debounce<T extends (...a: any[]) => void>(fn: T, ms: number) {\n  let t: ReturnType<typeof setTimeout>;\n  return (...a: Parameters<T>) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };\n}\n```\nCall it as `debounce<() => void>(save, 300)` or with a `Map<string, number>`.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-04", "model": "always_text", "latency_ms": 0, "raw": "Here it is: https://www.mozilla.org/firefox/new/", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-05", "model": "always_text", "latency_ms": 0, "raw": "It is `/etc/hosts`. Open it with `sudo nano /etc/hosts`, or browse to ~/Library/Fonts in Finder.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-06", "model": "always_text", "latency_ms": 0, "raw": "| item | a | b |\n|---|---|---|\n| one | 1 | 2 |\n| two | 3 | 4 |\n| three | 5 | 6 |", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-07", "model": "always_text", "latency_ms": 0, "raw": "1. Item 1\n2. Item 2\n3. Item 3\n4. Item 4\n5. Item 5\n6. Item 6\n7. Item 7\n8. Item 8\n9. Item 9\n10. Item 10", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-08", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-09", "model": "always_text", "latency_ms": 0, "raw": "5 km = 3.11 mi\n10 km = 6.21 mi\n21.1 km = 13.11 mi\n42.2 km = 26.22 mi\nTotal: 48.65 mi over 78.3 km", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-10", "model": "always_text", "latency_ms": 0, "raw": "5 km = 3.11 mi\n10 km = 6.21 mi\n21.1 km = 13.11 mi\n42.2 km = 26.22 mi\nTotal: 48.65 mi over 78.3 km", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-11", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-12", "model": "always_text", "latency_ms": 0, "raw": "This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-13", "model": "always_text", "latency_ms": 0, "raw": "This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-14", "model": "always_text", "latency_ms": 0, "raw": "This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail. This answer goes on for a while, sentence after sentence, because the question asked for detail.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-15", "model": "always_text", "latency_ms": 0, "raw": "Here it is: https://www.mozilla.org/firefox/new/", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-content-16", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-01", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-02", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-03", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-04", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-01", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-02", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-03", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-04", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-05", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-06", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-07", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-08", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-05", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-06", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-07", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-09", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-10", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-11", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-12", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-08", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-09", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-10", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-11", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-13", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-14", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-15", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-16", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-12", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-13", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-14", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-15", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-17", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-18", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-19", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-16", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-17", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-18", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-20", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-21", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-22", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-19", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-20", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-21", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-23", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-24", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-25", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-26", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-22", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-23", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-24", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-25", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-27", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-28", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-29", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-26", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-27", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-28", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-30", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-31", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-32", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-29", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-30", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-31", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-33", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-34", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-32", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-33", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-35", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-36", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-37", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-34", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-35", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-36", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-emo-38", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-emo-37", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-01", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-02", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-03", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-04", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-05", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-06", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-07", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-08", "model": "always_text", "latency_ms": 0, "raw": "1. Item 1\n2. Item 2\n3. Item 3\n4. Item 4\n5. Item 5\n6. Item 6\n7. Item 7\n8. Item 8\n9. Item 9\n10. Item 10", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-09", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-10", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-11", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-12", "model": "always_text", "latency_ms": 0, "raw": "Sure, here is the short answer.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-hard-01", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-hard-02", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-hard-03", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-hard-04", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-hard-05", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-hard-06", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-hard-07", "model": "always_text", "latency_ms": 0, "raw": "Claro, aqui vai a resposta curta.", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-hard-08", "model": "always_text", "latency_ms": 0, "raw": "1. Item 1\n2. Item 2\n3. Item 3\n4. Item 4\n5. Item 5\n6. Item 6\n7. Item 7\n8. Item 8\n9. Item 9\n10. Item 10", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "pt-hard-09", "model": "always_text", "latency_ms": 0, "raw": "5 km = 3.11 mi\n10 km = 6.21 mi\n21.1 km = 13.11 mi\n42.2 km = 26.22 mi\nTotal: 48.65 mi over 78.3 km", "error": null, "finish_reason": "stop", "usage": null}
+{"id": "en-hard-13", "model": "always_text", "latency_ms": 0, "raw": "```ts\nfunction debounce<T extends (...a: any[]) => void>(fn: T, ms: number) {\n  let t: ReturnType<typeof setTimeout>;\n  return (...a: Parameters<T>) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };\n}\n```\nCall it as `debounce<() => void>(save, 300)` or with a `Map<string, number>`.", "error": null, "finish_reason": "stop", "usage": null}
